@@ -4,7 +4,7 @@
 
 To get started with this project, follow these steps:
 
--Install Dependencies: npm install
+- Install Dependencies: npm install
 
 - Start the Development Server: npm run dev
 
