@@ -85,13 +85,13 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
       <div className="quiz-selector">
 
         <select id="quiz-select" value={selectedQuiz} onChange={handleQuizChange}>
-          <option value="mysql1">01.Introduction to Databases Data Definition and Datatypes</option>
-          <option value="mysql2">02.Basic CRUD in MySQL Server</option>
-          <option value="mysql3">03.Built-in Functions</option>
-          <option value="mysql4">04.Data Aggregation</option>
-          <option value="mysql4">05.Table Relations</option>
-          <option value="mysql5">06.Joins, Subqueries and Indices</option>
-          <option value="mysql6">07.Database Programmability</option>
+          <option value="mysql1">Intro to Databases: Data Definition and Datatypes</option>
+          <option value="mysql2">Basic CRUD in MySQL Server</option>
+          <option value="mysql3">Built-in Functions</option>
+          <option value="mysql4">Data Aggregation</option>
+          <option value="mysql4">Table Relations</option>
+          <option value="mysql5">Joins, Subqueries and Indices</option>
+          <option value="mysql6">Database Programmability</option>
         </select>
       </div>
       {!showResult ? (
