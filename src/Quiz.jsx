@@ -93,9 +93,9 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
           <option value="mysql2">Basic CRUD in MySQL Server</option>
           <option value="mysql3">Built-in Functions</option>
           <option value="mysql4">Data Aggregation</option>
-          <option value="mysql4">Table Relations</option>
-          <option value="mysql5">Joins, Subqueries and Indices</option>
-          <option value="mysql6">Database Programmability</option>
+          <option value="mysql5">Table Relations</option>
+          <option value="mysql6">Joins, Subqueries and Indices</option>
+          <option value="mysql7">Database Programmability</option>
         </select>
       </div>
       {!showResult ? (
