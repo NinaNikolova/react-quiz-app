@@ -37,10 +37,6 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
       setAnswer(true);
     } else {
       setAnswer(false);
-      setWrongQuestions((prev) => [
-        ...prev,
-        { question, correctAnswer, chosenAnswer: answer },
-      ]);
     }
   };
 
@@ -50,6 +46,14 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
   };
 
   const onClickNext = () => {
+    var answer = document.querySelector(".selected-answer").textContent;
+    if (answer !== correctAnswer) {
+      setWrongQuestions((prev) => [
+        ...prev,
+        { question, correctAnswer, chosenAnswer: answer },
+      ]);
+    }
+
     setAnswerIdx(null);
     setResult((prev) =>
       answer
@@ -117,37 +121,37 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
           </div>
         </>
       ) : (
-        <div className="result">
-          <h3>Result</h3>
-          <p>
-            Total Questions: <span>{questions.length}</span>
-          </p>
-          <p>
-            Total Score: <span>{result.score}</span>
-          </p>
-          <p>
-            Correct Answers: <span>{result.correctAnswers}</span>
-          </p>
-          <p>
-            Wrong Answers: <span>{result.wrongAnswers}</span>
-          </p>
-          {wrongQuestions.length > 0 && (
-            <div className="wrong-answers">
-              <h4>Wrong Answers</h4>
-              <ul>
-                {wrongQuestions.map((item, index) => (
-                  <li key={index}>
-                    <p>Question: {item.question}</p>
-                    <p>Correct Answer: {item.correctAnswer}</p>
-                    <p>Your Answer: {item.chosenAnswer}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          <button onClick={onTryAgain}>Try again</button>
-        </div>
-      )}
+          <div className="result">
+            <h3>Result</h3>
+            <p>
+              Total Questions: <span>{questions.length}</span>
+            </p>
+            <p>
+              Total Score: <span>{result.score}</span>
+            </p>
+            <p>
+              Correct Answers: <span>{result.correctAnswers}</span>
+            </p>
+            <p>
+              Wrong Answers: <span>{result.wrongAnswers}</span>
+            </p>
+            {wrongQuestions.length > 0 && (
+              <div className="wrong-answers">
+                <h4>Wrong Answers</h4>
+                <ul>
+                  {wrongQuestions.map((item, index) => (
+                    <li key={index}>
+                      <p>Question: {item.question}</p>
+                      <p>Correct Answer: {item.correctAnswer}</p>
+                      <p>Your Answer: {item.chosenAnswer}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            <button onClick={onTryAgain}>Try again</button>
+          </div>
+        )}
     </div>
   );
 };
