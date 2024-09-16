@@ -55,7 +55,7 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
       answer
         ? {
           ...prev,
-          score: prev.score + 5,
+          score: prev.score + 1,
           correctAnswers: prev.correctAnswers + 1,
         }
         : {
@@ -127,7 +127,7 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
             Total Questions: <span>{questions.length}</span>
           </p>
           <p>
-            Total Score: <span>{result.score}</span>
+            Total Score: <span>{(result.score / questions.length * 100).toFixed(2)}%</span>
           </p>
           <p>
             Correct Answers: <span>{result.correctAnswers}</span>
