@@ -109,7 +109,6 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
                 onClick={() => onAnwswerClick(choice, index)}
                 key={choice}
                 className={answerIdx === index ? "selected-answer" : null}
-                index={index}
               >
                 {choice}
               </li>
