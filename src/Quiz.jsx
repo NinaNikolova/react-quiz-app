@@ -1,28 +1,30 @@
 import { useState } from "react";
 import { resultInitalState } from "./constants";
 
-const Quiz = ({ bel, mat, hist, lit, geo, chp }) => {
+const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answerIdx, setAnswerIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
   const [result, setResult] = useState(resultInitalState);
   const [showResult, setShowResult] = useState(false);
-  const [selectedQuiz, setSelectedQuiz] = useState('bel');
+  const [selectedQuiz, setSelectedQuiz] = useState('mysql1');
   const [wrongQuestions, setWrongQuestions] = useState([])
   const questions = (() => {
     switch (selectedQuiz) {
-      case 'bel':
-        return bel;
-      case 'mat':
-        return mat;
-      case 'hist':
-        return hist;
-      case 'lit':
-        return lit;
-      case 'geo':
-        return geo;
-      case 'chp':
-        return chp;
+      case 'mysql1':
+        return mysql1;
+      case 'mysql2':
+        return mysql2;
+      case 'mysql3':
+        return mysql3;
+      case 'mysql4':
+        return mysql4;
+      case 'mysql5':
+        return mysql5;
+      case 'mysql6':
+        return mysql6;
+      case 'mysql7':
+        return mysql7;
       default:
         return [];
     }
@@ -78,17 +80,18 @@ const Quiz = ({ bel, mat, hist, lit, geo, chp }) => {
 
   return (
     <div className="quiz-container">
-      <h2>Тестове-входно ниво за 6-клас</h2>
+      <h2>MySQL quiz</h2>
 
       <div className="quiz-selector">
-        <label htmlFor="quiz-select">Избери предмет:</label>
+
         <select id="quiz-select" value={selectedQuiz} onChange={handleQuizChange}>
-          <option value="bel">Български език</option>
-          <option value="mat">Математика</option>
-          <option value="lit">Литература</option>
-          <option value="hist">История</option>
-          <option value="chp">Човек и природа</option>
-          <option value="geo">География</option>
+          <option value="mysql1">01.Introduction to Databases Data Definition and Datatypes</option>
+          <option value="mysql2">02.Basic CRUD in MySQL Server</option>
+          <option value="mysql3">03.Built-in Functions</option>
+          <option value="mysql4">04.Data Aggregation</option>
+          <option value="mysql4">05.Table Relations</option>
+          <option value="mysql5">06.Joins, Subqueries and Indices</option>
+          <option value="mysql6">07.Database Programmability</option>
         </select>
       </div>
       {!showResult ? (
