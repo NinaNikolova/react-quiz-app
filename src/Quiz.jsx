@@ -46,7 +46,12 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
 
   const handleQuizChange = (event) => {
     setSelectedQuiz(event.target.value);
-
+    setCurrentQuestion(0);
+    setAnswerIdx(null);
+    setAnswer(null);
+    setWrongQuestions([]);
+    setResult(resultInitalState);
+    setShowResult(false);
   };
 
   const onClickNext = () => {
@@ -55,7 +60,7 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
       answer
         ? {
           ...prev,
-          score: prev.score + 5,
+          score: prev.score + 1,
           correctAnswers: prev.correctAnswers + 1,
         }
         : {
@@ -76,6 +81,10 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
   const onTryAgain = () => {
     setResult(resultInitalState);
     setShowResult(false);
+    setCurrentQuestion(0);
+    setAnswerIdx(null);
+    setAnswer(null);
+    setWrongQuestions([]);
   };
 
   return (
