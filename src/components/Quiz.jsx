@@ -3,6 +3,8 @@ import { resultInitalState } from "../constants";
 import QuizSelector from "./QuizSelector";
 import Result from "./Result";
 import Question from "./Question";
+import { getQuestions } from "../utils/getQuestions";
+import { calculateResult } from "../utils/calculateResult";
 
 const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -10,29 +12,10 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
   const [answer, setAnswer] = useState(null);
   const [result, setResult] = useState(resultInitalState);
   const [showResult, setShowResult] = useState(false);
-  const [selectedQuiz, setSelectedQuiz] = useState('mysql1');
+  const [selectedQuiz, setSelectedQuiz] = useState("mysql1");
   const [wrongQuestions, setWrongQuestions] = useState([]);
 
-  const questions = (() => {
-    switch (selectedQuiz) {
-      case 'mysql1':
-        return mysql1;
-      case 'mysql2':
-        return mysql2;
-      case 'mysql3':
-        return mysql3;
-      case 'mysql4':
-        return mysql4;
-      case 'mysql5':
-        return mysql5;
-      case 'mysql6':
-        return mysql6;
-      case 'mysql7':
-        return mysql7;
-      default:
-        return [];
-    }
-  })();
+  const questions = getQuestions(selectedQuiz, { mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 });
   const { question, choices, correctAnswer } = questions[currentQuestion];
 
   const onAnwswerClick = (answer, index) => {
@@ -55,18 +38,7 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
 
   const onClickNext = () => {
     setAnswerIdx(null);
-    setResult((prev) =>
-      answer
-        ? {
-          ...prev,
-          score: prev.score + 1,
-          correctAnswers: prev.correctAnswers + 1,
-        }
-        : {
-          ...prev,
-          wrongAnswers: prev.wrongAnswers + 1,
-        }
-    );
+    setResult((prev) => calculateResult(answer, prev));
 
     if (currentQuestion !== questions.length - 1) {
       setCurrentQuestion((prev) => prev + 1);
