@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { resultInitalState } from "./constants";
+import { resultInitalState } from "../constants";
+import QuizSelector from "./QuizSelector";
+import Result from "./Result";
+import Question from "./Question";
 
 const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -8,7 +11,8 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
   const [result, setResult] = useState(resultInitalState);
   const [showResult, setShowResult] = useState(false);
   const [selectedQuiz, setSelectedQuiz] = useState('mysql1');
-  const [wrongQuestions, setWrongQuestions] = useState([])
+  const [wrongQuestions, setWrongQuestions] = useState([]);
+
   const questions = (() => {
     switch (selectedQuiz) {
       case 'mysql1':
@@ -86,34 +90,17 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
     <div className="quiz-container">
       <h2>MySQL quiz</h2>
 
-      <div className="quiz-selector">
-
-        <select id="quiz-select" value={selectedQuiz} onChange={handleQuizChange}>
-          <option value="mysql1">Intro to Databases: Data Definition and Datatypes</option>
-          <option value="mysql2">Basic CRUD in MySQL Server</option>
-          <option value="mysql3">Built-in Functions</option>
-          <option value="mysql4">Data Aggregation</option>
-          <option value="mysql5">Table Relations</option>
-          <option value="mysql6">Joins, Subqueries and Indices</option>
-          <option value="mysql7">Database Programmability</option>
-        </select>
-      </div>
+      <QuizSelector selectedQuiz={selectedQuiz} handleQuizChange={handleQuizChange} />
       {!showResult ? (
         <>
           <span className="active-question-no">{currentQuestion + 1}</span>
           <span className="total-question">/{questions.length}</span>
-          <h2>{question}</h2>
-          <ul>
-            {choices.map((choice, index) => (
-              <li
-                onClick={() => onAnwswerClick(choice, index)}
-                key={choice}
-                className={answerIdx === index ? "selected-answer" : null}
-              >
-                {choice}
-              </li>
-            ))}
-          </ul>
+          <Question
+            question={question}
+            choices={choices}
+            answerIdx={answerIdx}
+            onAnwswerClick={onAnwswerClick}
+          />
           <div className="footer">
             <button onClick={onClickNext} disabled={answerIdx === null}>
               {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
@@ -121,36 +108,7 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
           </div>
         </>
       ) : (
-        <div className="result">
-          <h3>Result</h3>
-          <p>
-            Total Questions: <span>{questions.length}</span>
-          </p>
-          <p>
-            Total Score: <span>{(result.score / questions.length * 100).toFixed(2)}%</span>
-          </p>
-          <p>
-            Correct Answers: <span>{result.correctAnswers}</span>
-          </p>
-          <p>
-            Wrong Answers: <span>{result.wrongAnswers}</span>
-          </p>
-          {wrongQuestions.length > 0 && (
-            <div className="wrong-answers">
-              <h4>Wrong Answers</h4>
-              <ul>
-                {wrongQuestions.map((item, index) => (
-                  <li key={index}>
-                    <p>Question: {item.question}</p>
-                    <p>Correct Answer: {item.correctAnswer}</p>
-                    <p>Your Answer: {item.chosenAnswer}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          <button onClick={onTryAgain}>Try again</button>
-        </div>
+        <Result result={result} questionsLength={questions.length} wrongQuestions={wrongQuestions} onTryAgain={onTryAgain} />
       )}
     </div>
   );
