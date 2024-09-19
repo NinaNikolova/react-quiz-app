@@ -269,5 +269,35 @@ export const mysql2 = [
     ],
     correctAnswer: "Deletes all rows where the department_id is 1 or 2",
   },
+  {
+    question: "Which of the following SQL queries incorrectly selects the first name from the employees table where the department ID is not 4?",
+    choices: [
+      "SELECT first_name FROM employees WHERE department_id != 4;",
+      "SELECT first_name FROM employees WHERE department_id = 4;",
+      "SELECT first_name FROM employees WHERE department_id NOT IN (4);",
+      "SELECT first_name FROM employees WHERE department_id <> 4;",
+    ],
+    correctAnswer: "SELECT first_name FROM employees WHERE department_id = 4;",
+  },
+  {
+    question: "Which of the following SQL queries sorts the records in the employees table by salary in decreasing order, then by first name alphabetically, last name in descending order, and middle name alphabetically?",
+    choices: [
+      "SELECT * FROM employees ORDER BY salary ASC, first_name DESC, last_name, middle_name DESC;",
+      "SELECT * FROM employees ORDER BY salary, first_name ASC, last_name DESC, middle_name ASC;",
+      "SELECT * FROM employees ORDER BY salary DESC, first_name DESC, last_name, middle_name DESC;",
+      "SELECT * FROM employees ORDER BY salary DESC, first_name, last_name DESC, middle_name;",
+    ],
+    correctAnswer: "What is the correct row?",
+  },
+  {
+    "question": "Which of the following SQL queries finds all countries along with information about their currency, displaying the country name, country code, and whether the currency is 'Euro' or 'Not Euro'? The results should be sorted by country name alphabetically.",
+    "choices": [
+      "SELECT IF(500<1000, 'YES', 'NO');",
+      "SELECT IF(500<1000, ELSE('YES', 'NO'));",
+      "SELECT ELSE(500<1000, 'YES', 'NO')",
+      "SELECT IF(500<1000, 'YES') ELSE 'NO'",
+    ],
+    "correctAnswer": "SELECT IF(500<1000, 'YES', 'NO');"
+  }
 
 ];
