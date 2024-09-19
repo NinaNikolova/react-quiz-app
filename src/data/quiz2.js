@@ -99,4 +99,165 @@ export const mysql2 = [
     ],
     correctAnswer: "TRUNCATE TABLE table_name;",
   },
+  {
+    question: "What is a projection in SQL?",
+    choices: [
+      "Selecting specific columns from a table",
+      "Filtering rows based on a condition",
+      "Combining rows from multiple tables",
+      "Sorting rows in a table",
+    ],
+    correctAnswer: "Selecting specific columns from a table",
+  },
+  {
+    question: "How do you specify multiple conditions in a WHERE clause?",
+    choices: [
+      "Using LIKE operators",
+      "Using GROUP BY clause",
+      "Using ORDER BY clause",
+      "Using AND or OR operators",
+    ],
+    correctAnswer: "Using AND or OR operators",
+  },
+  {
+    question: "What is the purpose of the CONCAT_WS() function?",
+    choices: [
+      "Combines multiple strings with a specified separator",
+      "Combines strings without any separator",
+      "Splits a string into multiple parts",
+      "Converts a string to uppercase",
+    ],
+    correctAnswer: "Combines multiple strings with a specified separator",
+  },
+  {
+    question: "Which keyword is used to remove duplicate values from the result set?",
+    choices: [
+      "ELIMINATE",
+      "DISTINCT",
+      "UNIQUE",
+      "REMOVE",
+    ],
+    correctAnswer: "DISTINCT",
+  },
+  {
+    question: "Which logical operator is used to negate a condition in MySQL?",
+    choices: [
+      "AND",
+      "OR",
+      "NOT",
+      "XOR",
+    ],
+    correctAnswer: "NOT",
+  },
+  {
+    question: "How does the BETWEEN operator function in SQL?",
+    choices: [
+      "Checks if a value is within a range",
+      "Compares two values for equality",
+      "Filters rows based on a specific condition",
+      "Sorts rows in ascending order",
+    ],
+    correctAnswer: "Checks if a value is within a range",
+  },
+  {
+    question: "What does the IN operator do in SQL?",
+    choices: [
+      "Checks if a value is greater than a specified value",
+      "Filters rows based on a specific condition",
+      "Sorts rows in descending order",
+      "Checks if a value matches any value in a list",
+    ],
+    correctAnswer: "Checks if a value matches any value in a list",
+  },
+  {
+    question: "What is NULL in SQL?",
+    choices: [
+      "A special value that means missing value",
+      "A placeholder for zero",
+      "A blank space",
+      "An empty string",
+    ],
+    correctAnswer: "A special value that means missing value",
+  },
+  {
+    question: "What does the ASC keyword specify in an ORDER BY clause?",
+    choices: [
+      "Descending order",
+      "Ascending order, default",
+      "A specific number of rows to return",
+      "A specific range of values",
+    ],
+    correctAnswer: "Ascending order, default",
+  },
+  {
+    question: "What does the DESC keyword specify in an ORDER BY clause?",
+    choices: [
+      "Descending order",
+      "Ascending order",
+      "The number of rows to return",
+      "The range of values to filter",
+    ],
+    correctAnswer: "Descending order",
+  },
+  {
+    question: "What is a view in MySQL?",
+    choices: [
+      "A virtual table made from other tables or joins",
+      "A physical copy of a table",
+      "A type of index",
+      "A method for creating stored procedures",
+    ],
+    correctAnswer: "A virtual table made from other tables or joins",
+  },
+  {
+    question: "Which SQL statement is used to limit the number of rows returned?",
+    choices: [
+      "LIMIT",
+      "TOP",
+      "ROWNUM",
+      "FETCH",
+    ],
+    correctAnswer: "LIMIT",
+  },
+  {
+    question: "What does the INSERT INTO statement do?",
+    choices: [
+      "Adds new records to a table",
+      "Updates existing records in a table",
+      "Deletes records from a table",
+      "Creates a new table",
+    ],
+    correctAnswer: "Adds new records to a table",
+  },
+  {
+    question: "What does the CREATE TABLE ... AS SELECT ... statement do?",
+    choices: [
+      "Creates a new table based on the results of a SELECT query",
+      "Updates an existing table with new data",
+      "Deletes a table",
+      "Alters the structure of an existing table",
+    ],
+    correctAnswer: "Creates a new table based on the results of a SELECT query",
+  },
+  {
+    question: "What is the purpose of the UPDATE statement in MySQL?",
+    choices: [
+      "Creates new records in a table",
+      "Deletes records from a table",
+      "Retrieves records from a table",
+      "Modifies existing records in a table",
+    ],
+    correctAnswer: "Modifies existing records in a table",
+  },
+  {
+    question: "What is the result of the following SQL statement: UPDATE `employees` SET `last_name` = 'Brown' WHERE `id` = 1?",
+    choices: [
+      "Inserts a new employee record with last name 'Brown'",
+      "Updates the last name of the employee with id 1 to 'Brown'",
+      "Deletes the employee with id 1",
+      "Retrieves the employee record with ID 1",
+    ],
+    correctAnswer: "Updates the last name of the employee with id 1 to 'Brown'",
+  },
+
 ];
