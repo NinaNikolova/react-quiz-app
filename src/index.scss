@@ -7,7 +7,10 @@ $foreground: #2d264b;
 
 body {
   font-family: monospace;
-  background: linear-gradient(0deg, $primary 0.03%, $accent);
+  background: url('./assets/background.jpg');
+  background-size: cover; /* Ensures the image covers the whole viewport */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
   color: $foreground;
   display: flex;
   justify-content: center;
