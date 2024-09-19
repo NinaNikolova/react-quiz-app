@@ -290,14 +290,14 @@ export const mysql2 = [
     correctAnswer: "What is the correct row?",
   },
   {
-    "question": "Which of the following SQL queries finds all countries along with information about their currency, displaying the country name, country code, and whether the currency is 'Euro' or 'Not Euro'? The results should be sorted by country name alphabetically.",
-    "choices": [
+    question: "Which of the following SQL queries finds all countries along with information about their currency, displaying the country name, country code, and whether the currency is 'Euro' or 'Not Euro'? The results should be sorted by country name alphabetically.",
+    choices: [
       "SELECT IF(500<1000, 'YES', 'NO');",
       "SELECT IF(500<1000, ELSE('YES', 'NO'));",
       "SELECT ELSE(500<1000, 'YES', 'NO')",
       "SELECT IF(500<1000, 'YES') ELSE 'NO'",
     ],
-    "correctAnswer": "SELECT IF(500<1000, 'YES', 'NO');"
+    correctAnswer: "SELECT IF(500<1000, 'YES', 'NO');"
   }
 
 ];
