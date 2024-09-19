@@ -259,5 +259,15 @@ export const mysql2 = [
     ],
     correctAnswer: "Updates the last name of the employee with id 1 to 'Brown'",
   },
+  {
+    question: "What does the SQL statement `DELETE FROM employees WHERE department_id = 1 OR department_id = 2;` do?",
+    choices: [
+      "Deletes all rows where the department_id is 1 or 2",
+      "Deletes all rows from the employees table",
+      "Updates rows where the department_id is 1 or 2",
+      "Selects all rows where the department_id is 1 or 2",
+    ],
+    correctAnswer: "Deletes all rows where the department_id is 1 or 2",
+  },
 
 ];
