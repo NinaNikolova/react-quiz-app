@@ -71,6 +71,7 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
             question={question}
             choices={choices}
             answerIdx={answerIdx}
+            correctAnswer={correctAnswer}
             onAnwswerClick={onAnwswerClick}
           />
           <div className="footer">

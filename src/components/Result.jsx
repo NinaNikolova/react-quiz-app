@@ -3,14 +3,14 @@ import { calculateGrade } from '../utils/gradeUtils';
 export default function Result({ result, questionsLength, wrongQuestions, onTryAgain }) {
 
     const scorePercent = (result.score / questionsLength) * 100;
-    const { grade, word } = calculateGrade(scorePercent);
+    const { grade, word, emoji } = calculateGrade(scorePercent);
 
     return (
         <div className="result">
             <h3>Result</h3>
             <p>Total Questions: <span>{questionsLength}</span></p>
             <p>Total Score: <span>{scorePercent.toFixed(2)}%</span></p>
-            <p>Grade: <span>{word} ({grade})</span></p>
+            <p>Grade: <span>{word} ({grade}) {emoji}</span></p>
             <p>Wrong Answers: <span>{result.wrongAnswers}</span></p>
 
             {wrongQuestions.length > 0 && (
