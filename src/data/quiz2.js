@@ -202,8 +202,8 @@ export const mysql2 = [
   {
     question: "What is a view in MySQL?",
     choices: [
-      "A virtual table made from other tables or joins",
       "A physical copy of a table",
+      "A virtual table made from other tables or joins",
       "A type of index",
       "A method for creating stored procedures",
     ],
@@ -212,10 +212,10 @@ export const mysql2 = [
   {
     question: "Which SQL statement is used to limit the number of rows returned?",
     choices: [
-      "LIMIT",
       "TOP",
       "ROWNUM",
       "FETCH",
+      "LIMIT",
     ],
     correctAnswer: "LIMIT",
   },
@@ -232,9 +232,9 @@ export const mysql2 = [
   {
     question: "What does the CREATE TABLE ... AS SELECT ... statement do?",
     choices: [
-      "Creates a new table based on the results of a SELECT query",
       "Updates an existing table with new data",
       "Deletes a table",
+      "Creates a new table based on the results of a SELECT query",
       "Alters the structure of an existing table",
     ],
     correctAnswer: "Creates a new table based on the results of a SELECT query",

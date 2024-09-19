@@ -171,16 +171,6 @@ export const mysql1 = [
     correctAnswer: "CHAR is fixed-length; VARCHAR is variable-length",
   },
   {
-    question: "What does the `TEXT` data type store in MySQL?",
-    choices: [
-      "Large amounts of text",
-      "Binary large objects",
-      "Fixed-length character data",
-      "Numeric data",
-    ],
-    correctAnswer: "Large amounts of text",
-  },
-  {
     question: "Which SQL statement is used to create a new database?",
     choices: [
       "NEW DATABASE",
