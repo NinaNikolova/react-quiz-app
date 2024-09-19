@@ -33,10 +33,10 @@ export const mysql1 = [
   {
     question: "Which data type is used to store large amounts of text in MySQL?",
     choices: [
-      "TEXT",
       "VARCHAR",
       "INT",
       "BLOB",
+      "TEXT",
     ],
     correctAnswer: "TEXT",
   },
@@ -54,9 +54,9 @@ export const mysql1 = [
     question: "What MySQL data type should you use to store a date?",
     choices: [
       "DATETIME",
-      "DATE",
       "TIMESTAMP",
       "TIME",
+      "DATE",
     ],
     correctAnswer: "DATE",
   },

@@ -12,9 +12,9 @@ export const mysql6 = [
   {
     question: "What type of join returns all rows from the left table and matching rows from the right table?",
     choices: [
+      "INNER JOIN",
       "LEFT JOIN",
       "RIGHT JOIN",
-      "INNER JOIN",
       "FULL JOIN",
     ],
     correctAnswer: "LEFT JOIN",
@@ -32,10 +32,10 @@ export const mysql6 = [
   {
     question: "What is an index in a MySQL database?",
     choices: [
-      "A data structure that improves the speed of data retrieval operations",
-      "A type of join used to combine tables",
       "A function used to aggregate data",
       "A clause used to limit the number of rows returned",
+      "A data structure that improves the speed of data retrieval operations",
+      "A type of join used to combine tables",
     ],
     correctAnswer: "A data structure that improves the speed of data retrieval operations",
   },
@@ -52,9 +52,10 @@ export const mysql6 = [
   {
     question: "Which SQL function can be used to get the maximum value of a column in a subquery?",
     choices: [
+      "SUM()",
       "MAX()",
       "MIN()",
-      "SUM()",
+
       "COUNT()",
     ],
     correctAnswer: "MAX()",
@@ -62,28 +63,29 @@ export const mysql6 = [
   {
     question: "What is a subquery in SQL?",
     choices: [
+      "A query that modifies table structure",
       "A query nested inside another query",
       "A query that performs a join operation",
       "A query that creates an index",
-      "A query that modifies table structure",
+
     ],
     correctAnswer: "A query nested inside another query",
   },
   {
     question: "How do you create an index on a column named 'username' in a table 'users'?",
     choices: [
-      "CREATE INDEX idx_username ON users(username);",
-      "ADD INDEX idx_username ON users(username);",
       "CREATE INDEX users(username);",
       "INDEX username ON users;",
+      "CREATE INDEX idx_username ON users(username);",
+      "ADD INDEX idx_username ON users(username);",
     ],
     correctAnswer: "CREATE INDEX idx_username ON users(username);",
   },
   {
     question: "Which type of join returns all rows from both tables, with matching rows from both sides where available?",
     choices: [
-      "FULL JOIN",
       "LEFT JOIN",
+      "FULL JOIN",
       "RIGHT JOIN",
       "INNER JOIN",
     ],
@@ -92,9 +94,9 @@ export const mysql6 = [
   {
     question: "How can you use a subquery to find employees who earn more than the average salary?",
     choices: [
-      "SELECT * FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);",
       "SELECT * FROM employees WHERE salary > AVG(salary);",
       "SELECT * FROM employees WHERE salary > MAX(salary);",
+      "SELECT * FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);",
       "SELECT * FROM employees WHERE salary > (SELECT SUM(salary) FROM employees);",
     ],
     correctAnswer: "SELECT * FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);",
@@ -102,8 +104,8 @@ export const mysql6 = [
   {
     question: "What is the purpose of using the 'EXISTS' keyword in a subquery?",
     choices: [
-      "To check if a subquery returns any rows",
       "To join two tables based on a condition",
+      "To check if a subquery returns any rows",
       "To create a new index",
       "To aggregate data from multiple columns",
     ],

@@ -2,8 +2,8 @@ export const mysql2 = [
   {
     question: "What does CRUD stand for in the context of databases?",
     choices: [
-      "Create, Read, Update, Delete",
       "Create, Remove, Update, Drop",
+      "Create, Read, Update, Delete",
       "Connect, Read, Use, Delete",
       "Create, Rename, Undo, Drop",
     ],
@@ -12,20 +12,20 @@ export const mysql2 = [
   {
     question: "Which SQL command is used to add new records to a table?",
     choices: [
-      "INSERT",
-      "ADD",
       "UPDATE",
       "CREATE",
+      "INSERT",
+      "ADD",
     ],
     correctAnswer: "INSERT",
   },
   {
     question: "How do you select all columns from a table named 'users' in MySQL?",
     choices: [
-      "SELECT * FROM users;",
       "SELECT ALL FROM users;",
       "GET ALL FROM users;",
       "SHOW * FROM users;",
+      "SELECT * FROM users;",
     ],
     correctAnswer: "SELECT * FROM users;",
   },
@@ -42,8 +42,8 @@ export const mysql2 = [
   {
     question: "Which clause is used to filter records in a SELECT query?",
     choices: [
-      "WHERE",
       "IF",
+      "WHERE",
       "HAVING",
       "FILTER",
     ],
