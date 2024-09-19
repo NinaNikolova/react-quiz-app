@@ -103,4 +103,24 @@ export const mysql3 = [
     ],
     correctAnswer: "CHAR_LENGTH()",
   },
+  {
+    question: "What is the result of SUBSTRING('abcdef', 3, 2) in MySQL?",
+    choices: [
+      "abcdef",
+      "abc",
+      "cd",
+      "bcd",
+    ],
+    correctAnswer: "cd",
+  },
+  {
+    question: "Which option does not return 'ab'?",
+    choices: [
+      "SELECT SUBSTRING('abcdef', 1, 2)",
+      "SELECT SUBSTRING('abcdef', -6, 2)",
+      "SELECT SUBSTR('abcdef' FROM 1 FOR 2)",
+      "SELECT SUBSTR('abcdef', 0, 2)",
+    ],
+    correctAnswer: "SELECT SUBSTR('abcdef', 0, 2)",
+  },
 ];
