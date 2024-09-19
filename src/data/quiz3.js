@@ -21,7 +21,7 @@ export const mysql3 = [
     correctAnswer: "Joins two or more strings together",
   },
   {
-    question: "Which function is used to find the length of a string in MySQL?",
+    question: "Which function get number of used bytes of a string in MySQL?",
     choices: [
       "SIZE()",
       "LENGTH()",
@@ -94,7 +94,7 @@ export const mysql3 = [
     correctAnswer: "Extracts a substring from a string",
   },
   {
-    question: "Which function can be used to return the length of a text string in MySQL?",
+    question: "Which function is used to count the number of characters in a string in MySQL?",
     choices: [
       "CHAR_LENGTH()",
       "STRING_LENGTH()",
@@ -104,7 +104,7 @@ export const mysql3 = [
     correctAnswer: "CHAR_LENGTH()",
   },
   {
-    question: "What is the result of SUBSTRING('abcdef', 3, 2) in MySQL?",
+    question: "What is the result of SELECT SUBSTRING('abcdef', 3, 2) in MySQL?",
     choices: [
       "abcdef",
       "abc",
@@ -123,4 +123,64 @@ export const mysql3 = [
     ],
     correctAnswer: "SELECT SUBSTR('abcdef', 0, 2)",
   },
+  {
+    question: "Which option returns 'HTML Tutorial'?",
+    choices: [
+      'SELECT REPLACE("SQL Tutorial", "SQL", "HTML")',
+      'SELECT REPLACE("SQL Tutorial", "sql", "HTML")',
+      'SELECT REPLACE("sql Tutorial", "SQL", "HTML")',
+      'SELECT REPLACE("sQl tutorial", "SQL", "HTML")',
+    ],
+    correctAnswer: 'SELECT REPLACE("SQL Tutorial", "SQL", "HTML")',
+  },
+  {
+    question: "What is the result of the following MySQL query: REPLACE(REPLACE('apples and oranges', 'apples', 'bananas'), 'oranges', 'grapes')?",
+    choices: [
+      "bananas and grapes",
+      "apples and grapes",
+      "bananas and oranges",
+      "apples and oranges",
+    ],
+    correctAnswer: "bananas and grapes",
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT LEFT(RIGHT('abcdef', 4), 2)?",
+    choices: [
+      "ab",
+      "cd",
+      "de",
+      "bc",
+    ],
+    correctAnswer: "cd",
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT REVERSE(REPEAT('abc', 3))?",
+    choices: [
+      "cbacbacba",
+      "abcabcabc",
+      "cba",
+      "cbacba",
+    ],
+    correctAnswer: "cbacbacba",
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT LOCATE('b', 'abcdefb', 4)?",
+    choices: [
+      "2",
+      "6",
+      "4",
+      "1",
+    ],
+    correctAnswer: "7",
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT INSERT('abcdef', 3, 2, 'XYZ')?",
+    choices: [
+      "abXYZef",
+      "abXYZcdef",
+      "abXYdef",
+      "abcXYZef",
+    ],
+    correctAnswer: "abXYZef",
+  }
 ];
