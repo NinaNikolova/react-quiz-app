@@ -182,5 +182,128 @@ export const mysql3 = [
       "abcXYZef",
     ],
     correctAnswer: "abXYZef",
+  },
+  {
+    question: "Which operator in MySQL returns the remainder of a division?",
+    choices: [
+      "/ (Division)",
+      "DIV (Integer Division)",
+      "% or MOD",
+      "^ (Power)"
+    ],
+    correctAnswer: "% or MOD"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT CONV('A', 16, 10)?",
+    choices: [
+      "10",
+      "16",
+      "11",
+      "1"
+    ],
+    correctAnswer: "10"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT CONV('1010', 2, 10)?",
+    choices: [
+      "2",
+      "10",
+      "12",
+      "1010"
+    ],
+    correctAnswer: "10"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT ROUND(12.345, 2)?",
+    choices: [
+      "12.34",
+      "12.35",
+      "12.30",
+      "12.40"
+    ],
+    correctAnswer: "12.35"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT FLOOR(12.99)?",
+    choices: [
+      "12",
+      "13",
+      "12.9",
+      "13.0"
+    ],
+    correctAnswer: "12"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT CEILING(12.01)?",
+    choices: [
+      "12",
+      "13",
+      "12.1",
+      "12.0"
+    ],
+    correctAnswer: "13"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT CEILING(-4.23), FLOOR(-4.23)?",
+    choices: [
+      "-4, -4",
+      "-5, -4",
+      "-5, -5",
+      "-4, -5"
+    ],
+    correctAnswer: "-4, -5"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT EXTRACT(YEAR FROM '2024-09-19')?",
+    choices: [
+      "09",
+      "19",
+      "2024",
+      "2023"
+    ],
+    correctAnswer: "2024"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT RAND() * 10;?",
+    choices: [
+      "A decimal between 0 and 10",
+      "An integer between 1 and 10",
+      "A decimal between 1 and 10",
+      "A random whole number"
+    ],
+    correctAnswer: "A decimal between 0 and 10"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT TIMESTAMPDIFF(MONTH, '2023-09-19', '2024-09-19')?",
+    choices: [
+      "11",
+      "12",
+      "13",
+      "10"
+    ],
+    correctAnswer: "12"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT 'Yes' WHERE 'abcdef' LIKE 'a%f';?",
+    choices: [
+
+      "No",
+      "NULL",
+      "Yes",
+      "Error"
+    ],
+    correctAnswer: "Yes"
+  },
+  {
+    question: "What is the result of the following MySQL query: SELECT 'Match' WHERE 'abcd' LIKE 'a_c_';?",
+    choices: [
+      "No Match",
+      "NULL",
+      "Match",
+      "Error"
+    ],
+    correctAnswer: "Match"
   }
+
+
 ];
