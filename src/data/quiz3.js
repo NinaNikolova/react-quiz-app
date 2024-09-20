@@ -167,7 +167,7 @@ export const mysql3 = [
     question: "What is the result of the following MySQL query: SELECT LOCATE('b', 'abcdefb', 4)?",
     choices: [
       "2",
-      "6",
+      "7",
       "4",
       "1",
     ],
