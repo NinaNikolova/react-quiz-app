@@ -110,4 +110,64 @@ export const mysql4 = [
     ],
     correctAnswer: "To ensure unique values are considered in the aggregation",
   },
+  {
+    question: "What does the term 'grouping' refer to in MySQL?",
+    choices: [
+      "Grouping allows taking data into separate groups based on a common property.",
+      "Sorting rows in a particular order.",
+      "Filtering rows based on certain conditions.",
+      "Creating a new table from existing tables."
+    ],
+    correctAnswer: "Grouping allows taking data into separate groups based on a common property."
+  },
+  {
+    question: "Does the `COUNT` function in MySQL include `NULL` values when counting rows?",
+    choices: [
+      "Yes, `COUNT` includes `NULL` values.",
+      "No, `COUNT` ignores `NULL` values.",
+      "`COUNT` counts `NULL` values only in certain cases.",
+      "`COUNT` throws an error if there are `NULL` values."
+    ],
+    correctAnswer: "No, `COUNT` ignores `NULL` values."
+  },
+  {
+    question: "What is the purpose of the `HAVING` clause in MySQL?",
+    choices: [
+      "`HAVING` filters rows before grouping them with `GROUP BY`.",
+      "`HAVING` filters groups based on aggregate functions after `GROUP BY`.",
+      "`HAVING` replaces the `WHERE` clause in MySQL.",
+      "`HAVING` is used to sort the results of a query."
+    ],
+    correctAnswer: "`HAVING` filters groups based on aggregate functions after `GROUP BY`."
+  },
+  {
+    question: "What is the main difference between the `HAVING` and `WHERE` clauses in MySQL?",
+    choices: [
+      "`HAVING` filters rows before grouping, while `WHERE` filters groups after aggregation.",
+      "`WHERE` is only used with aggregate functions, while `HAVING` is used for any condition.",
+      "`HAVING` and `WHERE` perform the same function and can be used interchangeably.",
+      "`WHERE` filters rows before grouping, while `HAVING` filters groups after aggregation.",
+    ],
+    correctAnswer: "`WHERE` filters rows before grouping, while `HAVING` filters groups after aggregation."
+  },
+  {
+    question: "In which clauses can you use an alias in MySQL?",
+    choices: [
+      "Aliases can be used in the WHERE clause, HAVING clause, ORDER BY clause, and GROUP BY clause.",
+      "Aliases can be used in the HAVING clause, ORDER BY clause, and GROUP BY clause, but not in the WHERE clause.",
+      "Aliases can be used in the WHERE clause and ORDER BY clause, but not in the HAVING clause or GROUP BY clause.",
+      "Aliases can only be used in the ORDER BY clause.",
+    ],
+    correctAnswer: "Aliases can be used in the HAVING clause, ORDER BY clause, and GROUP BY clause, but not in the WHERE clause.",
+  },
+  {
+    question: "What is the correct order in which SQL clauses should be written in a MySQL query?",
+    choices: [
+      "SELECT, FROM, JOIN, WHERE, LIMIT, GROUP BY, HAVING, ORDER BY",
+      "SELECT, FROM, WHERE, JOIN, GROUP BY, HAVING, ORDER BY, LIMIT",
+      "SELECT, FROM, JOIN, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT",
+      "SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT, JOIN",
+    ],
+    correctAnswer: "SELECT, FROM, JOIN, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT"
+  }
 ];
