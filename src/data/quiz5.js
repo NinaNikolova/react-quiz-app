@@ -75,34 +75,13 @@ export const mysql5 = [
   {
     question: "What is an example of a 'one-to-many' relationship in a database?",
     choices: [
-      "A single author can write multiple books",
+      "Two authors can write multiple books",
       "A single customer can place multiple orders",
-      "A single product can be purchased by multiple customers",
-      "A single category can have multiple products",
+      "Three products can be purchased by three customers",
+      "Many categories can have different products",
 
     ],
     correctAnswer: "A single customer can place multiple orders",
-  },
-  {
-    question: "Which normalization form ensures that every non-key attribute is fully functionally dependent on the primary key?",
-    choices: [
-      "Second Normal Form (2NF)",
-      "First Normal Form (1NF)",
-      "Third Normal Form (3NF)",
-      "Boyce-Codd Normal Form (BCNF)",
-    ],
-    correctAnswer: "Second Normal Form (2NF)",
-  },
-  {
-    question: "In database design, what is a surrogate key?",
-    choices: [
-      "A foreign key that links to another table’s primary key",
-      "A key used to create unique constraints on a table",
-      "An artificially created key used as a substitute for a natural primary key",
-      "A key that uniquely identifies records in a table based on a natural attribute",
-
-    ],
-    correctAnswer: "An artificially created key used as a substitute for a natural primary key",
   },
   {
     question: "What does the 'UNIQUE' constraint do in a MySQL table?",
@@ -115,4 +94,57 @@ export const mysql5 = [
     ],
     correctAnswer: "Ensures that all values in a column are distinct",
   },
+  {
+    question: "Which of the following steps are involved in designing and setting up a relational database?",
+    choices: [
+      "Identifying entities, defining table columns, and modeling relationships",
+      "Defining table columns, filling test data, and setting up primary keys",
+      "Identification of entities, defining table columns, primary keys, modeling relationships, defining constraints, and filling test data",
+      "Modeling relationships, filling test data, and defining constraints"
+    ],
+    correctAnswer: "Identification of entities, defining table columns, primary keys, modeling relationships, defining constraints, and filling test data",
+  },
+  {
+    question: "How does using a primary key-foreign key relationship help in a database?",
+    choices: [
+      "It allows storing duplicate data across tables",
+      "It ensures data integrity by avoiding repeating data across related tables",
+      "It creates a backup of the data in case of loss",
+      "It automatically indexes all the columns in the database"
+    ],
+    correctAnswer: "It ensures data integrity by avoiding repeating data across related tables",
+  },
+  {
+    question: "How is the relationship 'many-to-many' implemented in a database?",
+    choices: [
+      "By creating foreign keys in both tables",
+      "By using an additional join table",
+      "By creating a primary key in each table",
+      "By adding unique constraints to both tables",
+    ],
+    correctAnswer: "By using an additional join table",
+  }
+  
+  {
+    question: "What does cascading allow in relational databases?",
+    choices: [
+      "It prevents changes to related entities",
+      "It allows changes in one entity to cascade to all related entities",
+      "It ensures that changes are only applied to the current entity",
+      "It enables a backup of all related entities",
+    ],
+    correctAnswer: "It allows changes in one entity to cascade to all related entities",
+  }
+  
+  {
+    question: "What does a relational schema (E/R Diagrams) of a database include?",
+    choices: [
+      "Only the data stored in the tables",
+      "Schemas of tables, relationships, and other objects like constraints",
+      "Only relationships between tables",
+      "Indexes and triggers used by the database",
+    ],
+    correctAnswer: "Schemas of tables, relationships, and other objects like constraints",
+  }
+
 ];
