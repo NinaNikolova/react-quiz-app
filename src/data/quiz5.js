@@ -147,7 +147,7 @@ export const mysql5 = [
     correctAnswer: "Schemas of tables, relationships, and other objects like constraints",
   },
   {
-    question: "What is a composite primary key in a database?",
+    question: "What is a composite primary key in a join mapping table?",
     choices: [
       "A primary key that consists of a single column",
       "A primary key that is auto-incremented by the database",
