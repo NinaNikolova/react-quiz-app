@@ -134,8 +134,8 @@ export const mysql5 = [
       "It enables a backup of all related entities",
     ],
     correctAnswer: "It allows changes in one entity to cascade to all related entities",
-  }
-  
+  },
+
   {
     question: "What does a relational schema (E/R Diagrams) of a database include?",
     choices: [
@@ -145,6 +145,16 @@ export const mysql5 = [
       "Indexes and triggers used by the database",
     ],
     correctAnswer: "Schemas of tables, relationships, and other objects like constraints",
+  },
+  {
+    question: "What is a composite primary key in a database?",
+    choices: [
+      "A primary key that consists of a single column",
+      "A primary key that is auto-incremented by the database",
+      "A primary key made up of two or more columns",
+      "A primary key that automatically creates indexes for foreign keys",
+    ],
+    correctAnswer: "A primary key made up of two or more columns",
   }
 
 ];
