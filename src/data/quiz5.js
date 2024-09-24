@@ -78,8 +78,7 @@ export const mysql5 = [
       "Two authors can write multiple books",
       "A single customer can place multiple orders",
       "Three products can be purchased by three customers",
-      "Many categories can have different products",
-
+      "Many categories can have different products"
     ],
     correctAnswer: "A single customer can place multiple orders",
   },
@@ -123,8 +122,7 @@ export const mysql5 = [
       "By adding unique constraints to both tables",
     ],
     correctAnswer: "By using an additional join table",
-  }
-  
+  },
   {
     question: "What does cascading allow in relational databases?",
     choices: [
@@ -135,7 +133,6 @@ export const mysql5 = [
     ],
     correctAnswer: "It allows changes in one entity to cascade to all related entities",
   },
-
   {
     question: "What does a relational schema (E/R Diagrams) of a database include?",
     choices: [
