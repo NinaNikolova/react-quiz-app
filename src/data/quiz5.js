@@ -114,16 +114,6 @@ export const mysql5 = [
     correctAnswer: "It ensures data integrity by avoiding repeating data across related tables",
   },
   {
-    question: "How is the relationship 'many-to-many' implemented in a database?",
-    choices: [
-      "By creating foreign keys in both tables",
-      "By using an additional join table",
-      "By creating a primary key in each table",
-      "By adding unique constraints to both tables",
-    ],
-    correctAnswer: "By using an additional join table",
-  },
-  {
     question: "What does cascading allow in relational databases?",
     choices: [
       "It prevents changes to related entities",
@@ -152,6 +142,55 @@ export const mysql5 = [
       "A primary key that automatically creates indexes for foreign keys",
     ],
     correctAnswer: "A primary key made up of two or more columns",
-  }
-
+  },
+  {
+    question: "In a one-to-one relationship, why must the foreign key be unique?",
+    choices: [
+      "To ensure multiple rows can be linked to the same foreign key",
+      "To prevent duplicate values in the primary key",
+      "To enforce a strict one-to-one relationship between two tables",
+      "To automatically create indexes for both keys"
+    ],
+    correctAnswer: "To enforce a strict one-to-one relationship between two tables"
+  },
+  {
+    question: "In a one-to-many relationship, what additional column is necessary?",
+    choices: [
+      "An auto-incremented primary key",
+      "A composite primary key",
+      "A foreign key column in the 'many' table",
+      "A foreign key column in the 'one' table"
+    ],
+    correctAnswer: "A foreign key column in the 'many' table"
+  },
+  {
+    question: "In a many-to-many relationship, what is required to link the two tables?",
+    choices: [
+      "A composite key in the first table",
+      "A junction (associate) table with foreign keys from both tables",
+      "A primary key made of two columns",
+      "A unique foreign key in both tables"
+    ],
+    correctAnswer: "A junction (associate) table with foreign keys from both tables"
+  },
+  {
+    question: "In a one-to-one self-relation, what does the foreign key reference?",
+    choices: [
+      "The primary key of a different table.",
+      "A foreign key from another table.",
+      "The primary key of the same table.",
+      "A composite key from the same table."
+    ],
+    correctAnswer: "The primary key of the same table."
+  },
+  {
+    question: "Which MySQL query correctly creates a one-to-one self-relation in the 'employees' table?",
+    choices: [
+      "CREATE TABLE employees (id INT PRIMARY KEY, manager_id INT, FOREIGN KEY (manager_id) REFERENCES employees(id));",
+      "CREATE TABLE employees (id INT PRIMARY KEY, department_id INT, FOREIGN KEY (department_id) REFERENCES departments(department_id));",
+      "CREATE TABLE employees (id INT PRIMARY KEY, manager_id INT, FOREIGN KEY (manager_id) REFERENCES managers(manager_id));",
+      "CREATE TABLE employees (id INT PRIMARY KEY, manager_id INT UNIQUE, FOREIGN KEY (manager_id) REFERENCES employees(manager_id));"
+    ],
+    correctAnswer: "CREATE TABLE employees (id INT PRIMARY KEY, manager_id INT, FOREIGN KEY (manager_id) REFERENCES employees(id));"
+  },
 ];
