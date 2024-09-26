@@ -7,7 +7,7 @@ export const mysql2 = [
       "Connect, Read, Use, Delete",
       "Create, Rename, Undo, Drop",
     ],
-    correctAnswer: "Create, Read, Update, Delete",
+    correctAnswer: "Create, Read, Update, Delete"
   },
   {
     question: "Which SQL command is used to add new records to a table?",
@@ -17,7 +17,7 @@ export const mysql2 = [
       "INSERT",
       "ADD",
     ],
-    correctAnswer: "INSERT",
+    correctAnswer: "INSERT"
   },
   {
     question: "How do you select all columns from a table named 'users' in MySQL?",
@@ -27,7 +27,7 @@ export const mysql2 = [
       "SHOW * FROM users;",
       "SELECT * FROM users;",
     ],
-    correctAnswer: "SELECT * FROM users;",
+    correctAnswer: "SELECT * FROM users;"
   },
   {
     question: "What SQL command is used to modify existing records in a table?",
@@ -37,7 +37,7 @@ export const mysql2 = [
       "MODIFY",
       "CHANGE",
     ],
-    correctAnswer: "UPDATE",
+    correctAnswer: "UPDATE"
   },
   {
     question: "Which clause is used to filter records in a SELECT query?",
@@ -47,7 +47,7 @@ export const mysql2 = [
       "HAVING",
       "FILTER",
     ],
-    correctAnswer: "WHERE",
+    correctAnswer: "WHERE"
   },
   {
     question: "Which SQL statement is used to remove records from a table?",
@@ -57,7 +57,7 @@ export const mysql2 = [
       "DROP",
       "ERASE",
     ],
-    correctAnswer: "DELETE",
+    correctAnswer: "DELETE"
   },
   {
     question: "What SQL command would you use to remove an entire table?",
@@ -67,7 +67,7 @@ export const mysql2 = [
       "DROP TABLE table_name;",
       "ERASE TABLE table_name;",
     ],
-    correctAnswer: "DROP TABLE table_name;",
+    correctAnswer: "DROP TABLE table_name;"
   },
   {
     question: "How do you update the 'name' column to 'John' for a user with id=5?",
@@ -77,7 +77,7 @@ export const mysql2 = [
       "MODIFY users.name='John' WHERE id=5;",
       "CHANGE users.name TO 'John' WHERE id=5;",
     ],
-    correctAnswer: "UPDATE users SET name='John' WHERE id=5;",
+    correctAnswer: "UPDATE users SET name='John' WHERE id=5;"
   },
   {
     question: "Which SQL clause is used to sort the result set of a query?",
@@ -87,7 +87,7 @@ export const mysql2 = [
       "SORT BY",
       "FILTER BY",
     ],
-    correctAnswer: "ORDER BY",
+    correctAnswer: "ORDER BY"
   },
   {
     question: "How would you delete all rows from a table without removing the table itself?",
@@ -97,7 +97,7 @@ export const mysql2 = [
       "DROP ALL FROM table_name;",
       "REMOVE * FROM table_name;",
     ],
-    correctAnswer: "TRUNCATE TABLE table_name;",
+    correctAnswer: "TRUNCATE TABLE table_name;"
   },
   {
     question: "What is a projection in SQL?",
@@ -107,7 +107,7 @@ export const mysql2 = [
       "Combining rows from multiple tables",
       "Sorting rows in a table",
     ],
-    correctAnswer: "Selecting specific columns from a table",
+    correctAnswer: "Selecting specific columns from a table"
   },
   {
     question: "How do you specify multiple conditions in a WHERE clause?",
@@ -117,7 +117,7 @@ export const mysql2 = [
       "Using ORDER BY clause",
       "Using AND or OR operators",
     ],
-    correctAnswer: "Using AND or OR operators",
+    correctAnswer: "Using AND or OR operators"
   },
   {
     question: "What is the purpose of the CONCAT_WS() function?",
@@ -127,7 +127,7 @@ export const mysql2 = [
       "Splits a string into multiple parts",
       "Converts a string to uppercase",
     ],
-    correctAnswer: "Combines multiple strings with a specified separator",
+    correctAnswer: "Combines multiple strings with a specified separator"
   },
   {
     question: "Which keyword is used to remove duplicate values from the result set?",
@@ -137,7 +137,7 @@ export const mysql2 = [
       "UNIQUE",
       "REMOVE",
     ],
-    correctAnswer: "DISTINCT",
+    correctAnswer: "DISTINCT"
   },
   {
     question: "Which logical operator is used to negate a condition in MySQL?",
@@ -147,17 +147,17 @@ export const mysql2 = [
       "NOT",
       "XOR",
     ],
-    correctAnswer: "NOT",
+    correctAnswer: "NOT"
   },
   {
-    question: "How does the BETWEEN operator function in SQL?",
+    question: "What does the BETWEEN operator do in SQL?",
     choices: [
       "Checks if a value is within a range",
       "Compares two values for equality",
       "Filters rows based on a specific condition",
       "Sorts rows in ascending order",
     ],
-    correctAnswer: "Checks if a value is within a range",
+    correctAnswer: "Checks if a value is within a range"
   },
   {
     question: "What does the IN operator do in SQL?",
@@ -167,7 +167,7 @@ export const mysql2 = [
       "Sorts rows in descending order",
       "Checks if a value matches any value in a list",
     ],
-    correctAnswer: "Checks if a value matches any value in a list",
+    correctAnswer: "Checks if a value matches any value in a list"
   },
   {
     question: "What is NULL in SQL?",
@@ -177,7 +177,7 @@ export const mysql2 = [
       "A blank space",
       "An empty string",
     ],
-    correctAnswer: "A special value that means missing value",
+    correctAnswer: "A special value that means missing value"
   },
   {
     question: "What does the ASC keyword specify in an ORDER BY clause?",
@@ -187,7 +187,7 @@ export const mysql2 = [
       "A specific number of rows to return",
       "A specific range of values",
     ],
-    correctAnswer: "Ascending order, default",
+    correctAnswer: "Ascending order, default"
   },
   {
     question: "What does the DESC keyword specify in an ORDER BY clause?",
@@ -197,7 +197,7 @@ export const mysql2 = [
       "The number of rows to return",
       "The range of values to filter",
     ],
-    correctAnswer: "Descending order",
+    correctAnswer: "Descending order"
   },
   {
     question: "What is a view in MySQL?",
@@ -207,7 +207,7 @@ export const mysql2 = [
       "A type of index",
       "A method for creating stored procedures",
     ],
-    correctAnswer: "A virtual table made from other tables or joins",
+    correctAnswer: "A virtual table made from other tables or joins"
   },
   {
     question: "Which SQL statement is used to limit the number of rows returned?",
@@ -217,7 +217,7 @@ export const mysql2 = [
       "FETCH",
       "LIMIT",
     ],
-    correctAnswer: "LIMIT",
+    correctAnswer: "LIMIT"
   },
   {
     question: "What does the INSERT INTO statement do?",
@@ -227,7 +227,7 @@ export const mysql2 = [
       "Deletes records from a table",
       "Creates a new table",
     ],
-    correctAnswer: "Adds new records to a table",
+    correctAnswer: "Adds new records to a table"
   },
   {
     question: "What does the CREATE TABLE ... AS SELECT ... statement do?",
@@ -237,7 +237,7 @@ export const mysql2 = [
       "Creates a new table based on the results of a SELECT query",
       "Alters the structure of an existing table",
     ],
-    correctAnswer: "Creates a new table based on the results of a SELECT query",
+    correctAnswer: "Creates a new table based on the results of a SELECT query"
   },
   {
     question: "What is the purpose of the UPDATE statement in MySQL?",
@@ -257,7 +257,7 @@ export const mysql2 = [
       "Deletes the employee with id 1",
       "Retrieves the employee record with ID 1",
     ],
-    correctAnswer: "Updates the last name of the employee with id 1 to 'Brown'",
+    correctAnswer: "Updates the last name of the employee with id 1 to 'Brown'"
   },
   {
     question: "What does the SQL statement `DELETE FROM employees WHERE department_id = 1 OR department_id = 2;` do?",
@@ -267,27 +267,7 @@ export const mysql2 = [
       "Updates rows where the department_id is 1 or 2",
       "Selects all rows where the department_id is 1 or 2",
     ],
-    correctAnswer: "Deletes all rows where the department_id is 1 or 2",
-  },
-  {
-    question: "Which of the following SQL queries incorrectly selects the first name from the employees table where the department ID is not 4?",
-    choices: [
-      "SELECT first_name FROM employees WHERE department_id != 4;",
-      "SELECT first_name FROM employees WHERE department_id = 4;",
-      "SELECT first_name FROM employees WHERE department_id NOT IN (4);",
-      "SELECT first_name FROM employees WHERE department_id <> 4;",
-    ],
-    correctAnswer: "SELECT first_name FROM employees WHERE department_id = 4;",
-  },
-  {
-    question: "Which of the following SQL queries sorts the records in the employees table by salary in decreasing order, then by first name alphabetically, last name in descending order, and middle name alphabetically?",
-    choices: [
-      "SELECT * FROM employees ORDER BY salary ASC, first_name DESC, last_name, middle_name DESC;",
-      "SELECT * FROM employees ORDER BY salary, first_name ASC, last_name DESC, middle_name ASC;",
-      "SELECT * FROM employees ORDER BY salary DESC, first_name DESC, last_name, middle_name DESC;",
-      "SELECT * FROM employees ORDER BY salary DESC, first_name, last_name DESC, middle_name;",
-    ],
-    correctAnswer: "What is the correct row?",
+    correctAnswer: "Deletes all rows where the department_id is 1 or 2"
   },
 
 ];

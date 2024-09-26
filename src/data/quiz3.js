@@ -305,24 +305,24 @@ export const mysql3 = [
     correctAnswer: "Match"
   },
   {
-    "question": "What is the result of the following MySQL query: SELECT DATE_ADD('2016-09-10 00:00:00', INTERVAL 1 DAY);?",
-    "choices": [
+    question: "What is the result of the following MySQL query: SELECT DATE_ADD('2016-09-10 00:00:00', INTERVAL 1 DAY);?",
+    choices: [
       "2016-09-18 00:00:00",
       "2016-09-20 00:00:00",
       "2016-09-11 00:00:00",
       "Error"
     ],
-    "correctAnswer": "2016-09-11 00:00:00"
+    correctAnswer: "2016-09-11 00:00:00"
   },
   {
-    "question": "What is the result of the following MySQL query: SELECT IF(5 > 3, IF(10 > 5, 'A', 'B'), 'C') AS result;?",
-    "choices": [
+    question: "What is the result of the following MySQL query: SELECT IF(5 > 3, IF(10 > 5, 'A', 'B'), 'C') AS result;?",
+    choices: [
       "A",
       "B",
       "C",
       "Error"
     ],
-    "correctAnswer": "A"
+    correctAnswer: "A"
   }
 
 

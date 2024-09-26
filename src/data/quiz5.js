@@ -87,9 +87,8 @@ export const mysql5 = [
     choices: [
       "Allows NULL values in a column",
       "Ensures that all values in a column are distinct",
-
       "Provides a default value for the column",
-      "Automatically indexes the column",
+      "Automatically indexes the column"
     ],
     correctAnswer: "Ensures that all values in a column are distinct",
   },
@@ -182,15 +181,5 @@ export const mysql5 = [
       "A composite key from the same table."
     ],
     correctAnswer: "The primary key of the same table."
-  },
-  {
-    question: "Which MySQL query correctly creates a one-to-one self-relation in the 'employees' table?",
-    choices: [
-      "CREATE TABLE employees (id INT PRIMARY KEY, manager_id INT, FOREIGN KEY (manager_id) REFERENCES employees(id));",
-      "CREATE TABLE employees (id INT PRIMARY KEY, department_id INT, FOREIGN KEY (department_id) REFERENCES departments(department_id));",
-      "CREATE TABLE employees (id INT PRIMARY KEY, manager_id INT, FOREIGN KEY (manager_id) REFERENCES managers(manager_id));",
-      "CREATE TABLE employees (id INT PRIMARY KEY, manager_id INT UNIQUE, FOREIGN KEY (manager_id) REFERENCES employees(manager_id));"
-    ],
-    correctAnswer: "CREATE TABLE employees (id INT PRIMARY KEY, manager_id INT, FOREIGN KEY (manager_id) REFERENCES employees(id));"
-  },
+  }
 ];

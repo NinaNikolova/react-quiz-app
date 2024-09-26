@@ -10,16 +10,6 @@ export const mysql4 = [
     correctAnswer: "AVG()",
   },
   {
-    question: "What does the COUNT() function do in MySQL?",
-    choices: [
-      "Calculates the sum of a numeric column",
-      "Finds the maximum value in a column",
-      "Calculates the average of a numeric column",
-      "Counts the number of rows in a result set",
-    ],
-    correctAnswer: "Counts the number of rows in a result set",
-  },
-  {
     question: "Which function would you use to find the highest value in a column?",
     choices: [
       "MAX()",
@@ -28,27 +18,6 @@ export const mysql4 = [
       "AVG()",
     ],
     correctAnswer: "MAX()",
-  },
-  {
-    question: "How do you find the total sum of a column named 'price' in a table 'products'?",
-    choices: [
-      "SELECT SUM(price) INTO total FROM products;",
-      "SELECT SUM(price) FROM products;",
-      "SELECT TOTAL(price) FROM products;",
-      "SELECT ADD(price) FROM products;",
-
-    ],
-    correctAnswer: "SELECT SUM(price) FROM products;",
-  },
-  {
-    question: "Which SQL clause is used to group rows that have the same values into summary rows?",
-    choices: [
-      "ORDER BY",
-      "GROUP BY",
-      "HAVING",
-      "JOIN",
-    ],
-    correctAnswer: "GROUP BY",
   },
   {
     question: "What does the HAVING clause do in MySQL?",
@@ -129,16 +98,6 @@ export const mysql4 = [
       "`COUNT` throws an error if there are `NULL` values."
     ],
     correctAnswer: "No, `COUNT` ignores `NULL` values."
-  },
-  {
-    question: "What is the purpose of the `HAVING` clause in MySQL?",
-    choices: [
-      "`HAVING` filters rows before grouping them with `GROUP BY`.",
-      "`HAVING` filters groups based on aggregate functions after `GROUP BY`.",
-      "`HAVING` replaces the `WHERE` clause in MySQL.",
-      "`HAVING` is used to sort the results of a query."
-    ],
-    correctAnswer: "`HAVING` filters groups based on aggregate functions after `GROUP BY`."
   },
   {
     question: "What is the main difference between the `HAVING` and `WHERE` clauses in MySQL?",
