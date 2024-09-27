@@ -40,25 +40,14 @@ export const mysql6 = [
     correctAnswer: "A data structure that improves the speed of data retrieval operations",
   },
   {
-    question: "How do you perform an inner join between two tables 'employees' and 'departments' on the 'department_id' column?",
+    question: "How do you perform an INNER JOIN between two tables 'employees' and 'departments' on the 'department_id' column?",
     choices: [
-      "SELECT * FROM employees INNER JOIN departments ON employees.department_id = departments.department_id;",
+      "SELECT * FROM employees AS e JOIN departments AS d ON e.department_id = d.department_id;",
       "SELECT * FROM employees JOIN departments WHERE employees.department_id = departments.department_id;",
       "SELECT * FROM employees LEFT JOIN departments ON employees.department_id = departments.department_id;",
       "SELECT * FROM employees, departments WHERE employees.department_id = departments.department_id;",
     ],
-    correctAnswer: "SELECT * FROM employees INNER JOIN departments ON employees.department_id = departments.department_id;",
-  },
-  {
-    question: "Which SQL function can be used to get the maximum value of a column in a subquery?",
-    choices: [
-      "SUM()",
-      "MAX()",
-      "MIN()",
-
-      "COUNT()",
-    ],
-    correctAnswer: "MAX()",
+    correctAnswer: "SELECT * FROM employees AS e JOIN departments AS d ON e.department_id = d.department_id;",
   },
   {
     question: "What is a subquery in SQL?",
@@ -85,11 +74,11 @@ export const mysql6 = [
     question: "Which type of join returns all rows from both tables, with matching rows from both sides where available?",
     choices: [
       "LEFT JOIN",
-      "FULL JOIN",
+      "FULL JOIN(OUTER JOIN)",
       "RIGHT JOIN",
       "INNER JOIN",
     ],
-    correctAnswer: "FULL JOIN",
+    correctAnswer: "FULL JOIN(OUTER JOIN)",
   },
   {
     question: "How can you use a subquery to find employees who earn more than the average salary?",
@@ -102,13 +91,34 @@ export const mysql6 = [
     correctAnswer: "SELECT * FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);",
   },
   {
-    question: "What is the purpose of using the 'EXISTS' keyword in a subquery?",
+    question: "What is the result of performing a Cartesian product between two tables- example: SELECT e.name, d.depatment FROM employees AS e, depatments AS d?",
     choices: [
-      "To join two tables based on a condition",
-      "To check if a subquery returns any rows",
-      "To create a new index",
-      "To aggregate data from multiple columns",
+      "It combines rows from two tables based on a matching condition",
+      "It returns the common rows between two tables",
+      "It pairs every row from the first table with every row from the second table",
+      "It filters rows from two tables using a WHERE clause"
     ],
-    correctAnswer: "To check if a subquery returns any rows",
+    correctAnswer: "It pairs every row from the first table with every row from the second table"
   },
+  {
+    question: "Are INNER JOIN and JOIN equivalent in SQL?",
+    choices: [
+      "No, JOIN returns all rows from both tables, while INNER JOIN returns only matching rows",
+      "Yes, JOIN is the default and performs an INNER JOIN by default",
+      "No, JOIN combines tables without any condition, while INNER JOIN requires a condition",
+      "Yes, but JOIN is faster than INNER JOIN"
+    ],
+    correctAnswer: "Yes, JOIN is the default and performs an INNER JOIN by default"
+  },
+  {
+    question: "What does it mean when FULL JOIN is not implemented in MySQL?",
+    choices: [
+      "It means FULL JOIN is faster in MySQL compared to other databases",
+      "It means MySQL does not natively support a FULL JOIN to combine matching and non-matching rows from two tables",
+      "It means MySQL supports FULL JOIN only for specific data types",
+      "It means FULL JOIN can be used in MySQL without any limitations"
+    ],
+    correctAnswer: "It means MySQL does not natively support a FULL JOIN to combine matching and non-matching rows from two tables"
+  },
+
 ];
