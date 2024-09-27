@@ -120,5 +120,16 @@ export const mysql6 = [
     ],
     correctAnswer: "It means MySQL does not natively support a FULL JOIN to combine matching and non-matching rows from two tables"
   },
+  {
+    question: "What type of JOIN is used in the following SQL query?\nSELECT e.name, m.name FROM employees e JOIN employees m ON e.manager_id=m.employee_id;",
+    choices: [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "FULL JOIN",
+      "CROSS JOIN"
+    ],
+    correctAnswer: "INNER JOIN"
+  },
+
 
 ];
