@@ -130,6 +130,55 @@ export const mysql6 = [
     ],
     correctAnswer: "INNER JOIN"
   },
-
+  {
+    question: "How can you simulate a FULL JOIN in MySQL since it is not natively supported?",
+    choices: [
+      "By using only a LEFT JOIN",
+      "By using a UNION of LEFT JOIN and RIGHT JOIN",
+      "By using a CROSS JOIN with a condition",
+      "By using an INNER JOIN followed by a WHERE clause"
+    ],
+    correctAnswer: "By using a UNION of LEFT JOIN and RIGHT JOIN"
+  },
+  {
+    question: "What is a CROSS JOIN in SQL?",
+    choices: [
+      "It returns only the matching rows from two tables based on a condition",
+      "It returns rows from the first table that have corresponding rows in the second table",
+      "It pairs every row from the first table with every row from the second table, creating a Cartesian product. This is equivalent to a JOIN without an ON condition",
+      "It combines rows from two tables based on a primary key"
+    ],
+    correctAnswer: "It pairs every row from the first table with every row from the second table, creating a Cartesian product. This is equivalent to a JOIN without an ON condition"
+  },
+  {
+    question: "What is a clustered index in a MySQL database?",
+    choices: [
+      "An index that defines the physical order in which data is stored in a table.",
+      "An index that stores data separately from the index structure.",
+      "An index that allows multiple indices on a table.",
+      "An index used only with foreign keys.",
+    ],
+    correctAnswer: "An index that defines the physical order in which data is stored in a table.",
+  },
+  {
+    question: "What is a non-clustered index in a MySQL database?",
+    choices: [
+      "An index that defines the physical order of the data in the table.",
+      "An index stored separately from the table data, with pointers to the actual rows.",
+      "An index that can only be applied to primary keys.",
+      "An index that modifies the physical storage order of the data.",
+    ],
+    correctAnswer: "An index stored separately from the table data, with pointers to the actual rows.",
+  },
+  {
+    question: "Which of the following is a downside of using non-clustered indexes in MySQL?",
+    choices: [
+      "They can only be used on primary key columns.",
+      "They store data in the same physical order as the table, slowing down updates.",
+      "They take up additional storage space and can slow down insert, update, and delete operations.",
+      "A table can have only one non-clustered index, which limits flexibility.",
+    ],
+    correctAnswer: "They take up additional storage space and can slow down insert, update, and delete operations.",
+  },
 
 ];
