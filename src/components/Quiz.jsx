@@ -26,7 +26,7 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
       setAnswer(false);
       setWrongQuestions((prev) => [
         ...prev,
-        { question, correctAnswer, chosenAnswer: answer },
+        { question, correctAnswer, chosenAnswer: answer, imageURL },
       ]);
     }
   };

@@ -19,6 +19,9 @@ export default function Result({ result, questionsLength, wrongQuestions, onTryA
                     <ul>
                         {wrongQuestions.map((item, index) => (
                             <li key={index}>
+                                <span> {item.imageURL && (
+                                    <img src={item.imageURL} alt="Question illustration" className="question-image" />
+                                )}</span>
                                 <p>Question: {item.question}</p>
                                 <p>Correct Answer: {item.correctAnswer}</p>
                                 <p>Your Answer: {item.chosenAnswer}</p>
