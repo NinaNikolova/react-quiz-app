@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Question({ question, choices, answerIdx, onAnwswerClick, correctAnswer }) {
+export default function Question({ question, choices, answerIdx, onAnwswerClick, correctAnswer, imageURL }) {
     const [selectedChoice, setSelectedChoice] = useState(null);
 
     useEffect(() => {
@@ -16,6 +16,9 @@ export default function Question({ question, choices, answerIdx, onAnwswerClick,
     return (
         <>
             <h2>{question}</h2>
+            {imageURL && (
+                <img src={imageURL} alt="Question illustration" className="question-image" />
+            )}
             <ul>
                 {choices.map((choice, index) => (
                     <li

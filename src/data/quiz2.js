@@ -1,5 +1,6 @@
 export const mysql2 = [
   {
+    index: 1,
     question: "What does CRUD stand for in the context of databases?",
     choices: [
       "Create, Remove, Update, Drop",
@@ -7,9 +8,11 @@ export const mysql2 = [
       "Connect, Read, Use, Delete",
       "Create, Rename, Undo, Drop",
     ],
-    correctAnswer: "Create, Read, Update, Delete"
+    correctAnswer: "Create, Read, Update, Delete",
+    imageURL: null,
   },
   {
+    index: 2,
     question: "Which SQL command is used to add new records to a table?",
     choices: [
       "UPDATE",
@@ -17,9 +20,11 @@ export const mysql2 = [
       "INSERT",
       "ADD",
     ],
-    correctAnswer: "INSERT"
+    correctAnswer: "INSERT",
+    imageURL: null,
   },
   {
+    index: 3,
     question: "How do you select all columns from a table named 'users' in MySQL?",
     choices: [
       "SELECT ALL FROM users;",
@@ -27,9 +32,11 @@ export const mysql2 = [
       "SHOW * FROM users;",
       "SELECT * FROM users;",
     ],
-    correctAnswer: "SELECT * FROM users;"
+    correctAnswer: "SELECT * FROM users;",
+    imageURL: null,
   },
   {
+    index: 4,
     question: "What SQL command is used to modify existing records in a table?",
     choices: [
       "ALTER",
@@ -37,9 +44,11 @@ export const mysql2 = [
       "MODIFY",
       "CHANGE",
     ],
-    correctAnswer: "UPDATE"
+    correctAnswer: "UPDATE",
+    imageURL: null,
   },
   {
+    index: 5,
     question: "Which clause is used to filter records in a SELECT query?",
     choices: [
       "IF",
@@ -47,9 +56,11 @@ export const mysql2 = [
       "HAVING",
       "FILTER",
     ],
-    correctAnswer: "WHERE"
+    correctAnswer: "WHERE",
+    imageURL: null,
   },
   {
+    index: 6,
     question: "Which SQL statement is used to remove records from a table?",
     choices: [
       "DELETE",
@@ -57,9 +68,11 @@ export const mysql2 = [
       "DROP",
       "ERASE",
     ],
-    correctAnswer: "DELETE"
+    correctAnswer: "DELETE",
+    imageURL: null,
   },
   {
+    index: 7,
     question: "What SQL command would you use to remove an entire table?",
     choices: [
       "DELETE TABLE table_name;",
@@ -67,9 +80,11 @@ export const mysql2 = [
       "DROP TABLE table_name;",
       "ERASE TABLE table_name;",
     ],
-    correctAnswer: "DROP TABLE table_name;"
+    correctAnswer: "DROP TABLE table_name;",
+    imageURL: null,
   },
   {
+    index: 8,
     question: "How do you update the 'name' column to 'John' for a user with id=5?",
     choices: [
       "UPDATE users SET name='John' WHERE id=5;",
@@ -77,9 +92,11 @@ export const mysql2 = [
       "MODIFY users.name='John' WHERE id=5;",
       "CHANGE users.name TO 'John' WHERE id=5;",
     ],
-    correctAnswer: "UPDATE users SET name='John' WHERE id=5;"
+    correctAnswer: "UPDATE users SET name='John' WHERE id=5;",
+    imageURL: null,
   },
   {
+    index: 9,
     question: "Which SQL clause is used to sort the result set of a query?",
     choices: [
       "ORDER BY",
@@ -87,9 +104,11 @@ export const mysql2 = [
       "SORT BY",
       "FILTER BY",
     ],
-    correctAnswer: "ORDER BY"
+    correctAnswer: "ORDER BY",
+    imageURL: null,
   },
   {
+    index: 10,
     question: "How would you delete all rows from a table without removing the table itself?",
     choices: [
       "DELETE * FROM table_name;",
@@ -97,9 +116,11 @@ export const mysql2 = [
       "DROP ALL FROM table_name;",
       "REMOVE * FROM table_name;",
     ],
-    correctAnswer: "TRUNCATE TABLE table_name;"
+    correctAnswer: "TRUNCATE TABLE table_name;",
+    imageURL: null,
   },
   {
+    index: 11,
     question: "What is a projection in SQL?",
     choices: [
       "Selecting specific columns from a table",
@@ -107,9 +128,11 @@ export const mysql2 = [
       "Combining rows from multiple tables",
       "Sorting rows in a table",
     ],
-    correctAnswer: "Selecting specific columns from a table"
+    correctAnswer: "Selecting specific columns from a table",
+    imageURL: null,
   },
   {
+    index: 12,
     question: "How do you specify multiple conditions in a WHERE clause?",
     choices: [
       "Using LIKE operators",
@@ -117,9 +140,11 @@ export const mysql2 = [
       "Using ORDER BY clause",
       "Using AND or OR operators",
     ],
-    correctAnswer: "Using AND or OR operators"
+    correctAnswer: "Using AND or OR operators",
+    imageURL: null,
   },
   {
+    index: 13,
     question: "What is the purpose of the CONCAT_WS() function?",
     choices: [
       "Combines multiple strings with a specified separator",
@@ -127,9 +152,11 @@ export const mysql2 = [
       "Splits a string into multiple parts",
       "Converts a string to uppercase",
     ],
-    correctAnswer: "Combines multiple strings with a specified separator"
+    correctAnswer: "Combines multiple strings with a specified separator",
+    imageURL: null,
   },
   {
+    index: 14,
     question: "Which keyword is used to remove duplicate values from the result set?",
     choices: [
       "ELIMINATE",
@@ -137,9 +164,11 @@ export const mysql2 = [
       "UNIQUE",
       "REMOVE",
     ],
-    correctAnswer: "DISTINCT"
+    correctAnswer: "DISTINCT",
+    imageURL: null,
   },
   {
+    index: 15,
     question: "Which logical operator is used to negate a condition in MySQL?",
     choices: [
       "AND",
@@ -147,9 +176,11 @@ export const mysql2 = [
       "NOT",
       "XOR",
     ],
-    correctAnswer: "NOT"
+    correctAnswer: "NOT",
+    imageURL: null,
   },
   {
+    index: 16,
     question: "What does the BETWEEN operator do in SQL?",
     choices: [
       "Checks if a value is within a range",
@@ -157,9 +188,11 @@ export const mysql2 = [
       "Filters rows based on a specific condition",
       "Sorts rows in ascending order",
     ],
-    correctAnswer: "Checks if a value is within a range"
+    correctAnswer: "Checks if a value is within a range",
+    imageURL: null,
   },
   {
+    index: 17,
     question: "What does the IN operator do in SQL?",
     choices: [
       "Checks if a value is greater than a specified value",
@@ -167,9 +200,11 @@ export const mysql2 = [
       "Sorts rows in descending order",
       "Checks if a value matches any value in a list",
     ],
-    correctAnswer: "Checks if a value matches any value in a list"
+    correctAnswer: "Checks if a value matches any value in a list",
+    imageURL: null,
   },
   {
+    index: 18,
     question: "What is NULL in SQL?",
     choices: [
       "A special value that means missing value",
@@ -177,9 +212,11 @@ export const mysql2 = [
       "A blank space",
       "An empty string",
     ],
-    correctAnswer: "A special value that means missing value"
+    correctAnswer: "A special value that means missing value",
+    imageURL: null,
   },
   {
+    index: 19,
     question: "What does the ASC keyword specify in an ORDER BY clause?",
     choices: [
       "Descending order",
@@ -187,9 +224,11 @@ export const mysql2 = [
       "A specific number of rows to return",
       "A specific range of values",
     ],
-    correctAnswer: "Ascending order, default"
+    correctAnswer: "Ascending order, default",
+    imageURL: null,
   },
   {
+    index: 20,
     question: "What does the DESC keyword specify in an ORDER BY clause?",
     choices: [
       "Descending order",
@@ -197,9 +236,11 @@ export const mysql2 = [
       "The number of rows to return",
       "The range of values to filter",
     ],
-    correctAnswer: "Descending order"
+    correctAnswer: "Descending order",
+    imageURL: null,
   },
   {
+    index: 21,
     question: "What is a view in MySQL?",
     choices: [
       "A physical copy of a table",
@@ -207,9 +248,11 @@ export const mysql2 = [
       "A type of index",
       "A method for creating stored procedures",
     ],
-    correctAnswer: "A virtual table made from other tables or joins"
+    correctAnswer: "A virtual table made from other tables or joins",
+    imageURL: null,
   },
   {
+    index: 22,
     question: "Which SQL statement is used to limit the number of rows returned?",
     choices: [
       "TOP",
@@ -217,9 +260,11 @@ export const mysql2 = [
       "FETCH",
       "LIMIT",
     ],
-    correctAnswer: "LIMIT"
+    correctAnswer: "LIMIT",
+    imageURL: null,
   },
   {
+    index: 23,
     question: "What does the INSERT INTO statement do?",
     choices: [
       "Adds new records to a table",
@@ -227,9 +272,11 @@ export const mysql2 = [
       "Deletes records from a table",
       "Creates a new table",
     ],
-    correctAnswer: "Adds new records to a table"
+    correctAnswer: "Adds new records to a table",
+    imageURL: null,
   },
   {
+    index: 24,
     question: "What does the CREATE TABLE ... AS SELECT ... statement do?",
     choices: [
       "Updates an existing table with new data",
@@ -237,9 +284,11 @@ export const mysql2 = [
       "Creates a new table based on the results of a SELECT query",
       "Alters the structure of an existing table",
     ],
-    correctAnswer: "Creates a new table based on the results of a SELECT query"
+    correctAnswer: "Creates a new table based on the results of a SELECT query",
+    imageURL: null,
   },
   {
+    index: 25,
     question: "What is the purpose of the UPDATE statement in MySQL?",
     choices: [
       "Creates new records in a table",
@@ -248,8 +297,10 @@ export const mysql2 = [
       "Modifies existing records in a table",
     ],
     correctAnswer: "Modifies existing records in a table",
+    imageURL: null,
   },
   {
+    index: 26,
     question: "What is the result of the following SQL statement: UPDATE `employees` SET `last_name` = 'Brown' WHERE `id` = 1?",
     choices: [
       "Inserts a new employee record with last name 'Brown'",
@@ -257,9 +308,11 @@ export const mysql2 = [
       "Deletes the employee with id 1",
       "Retrieves the employee record with ID 1",
     ],
-    correctAnswer: "Updates the last name of the employee with id 1 to 'Brown'"
+    correctAnswer: "Updates the last name of the employee with id 1 to 'Brown'",
+    imageURL: null,
   },
   {
+    index: 27,
     question: "What does the SQL statement `DELETE FROM employees WHERE department_id = 1 OR department_id = 2;` do?",
     choices: [
       "Deletes all rows where the department_id is 1 or 2",
@@ -267,7 +320,8 @@ export const mysql2 = [
       "Updates rows where the department_id is 1 or 2",
       "Selects all rows where the department_id is 1 or 2",
     ],
-    correctAnswer: "Deletes all rows where the department_id is 1 or 2"
+    correctAnswer: "Deletes all rows where the department_id is 1 or 2",
+    imageURL: null,
   },
 
 ];

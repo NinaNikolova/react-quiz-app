@@ -1,5 +1,6 @@
 export const mysql5 = [
   {
+    index: 1,
     question: "What is a primary key in a MySQL table?",
     choices: [
       "A foreign key from another table",
@@ -8,8 +9,10 @@ export const mysql5 = [
       "A column that can have duplicate values",
     ],
     correctAnswer: "A unique identifier for each row in the table",
+    imageURL: null,
   },
   {
+    index: 2,
     question: "Which SQL keyword is used to define a foreign key relationship between two tables?",
     choices: [
       "REFERENCES",
@@ -18,8 +21,10 @@ export const mysql5 = [
       "JOIN",
     ],
     correctAnswer: "FOREIGN KEY",
+    imageURL: null,
   },
   {
+    index: 3,
     question: "What is the purpose of normalization in database design?",
     choices: [
       "To simplify the database structure",
@@ -29,8 +34,10 @@ export const mysql5 = [
 
     ],
     correctAnswer: "To reduce data redundancy and improve data integrity",
+    imageURL: null,
   },
   {
+    index: 4,
     question: "Which type of relationship is represented by a 'many-to-many' cardinality?",
     choices: [
       "A relationship where one record in one table relates to multiple records in another table",
@@ -39,8 +46,10 @@ export const mysql5 = [
       "A relationship where one record in one table relates to one record in another table",
     ],
     correctAnswer: "A relationship where multiple records in one table relate to multiple records in another table",
+    imageURL: null,
   },
   {
+    index: 5,
     question: "How do you ensure that a column in a table cannot have NULL values?",
     choices: [
       "By defining the column with a default value",
@@ -50,8 +59,10 @@ export const mysql5 = [
 
     ],
     correctAnswer: "By setting the column as NOT NULL",
+    imageURL: null,
   },
   {
+    index: 6,
     question: "What does the 'ON DELETE CASCADE' rule do in a foreign key relationship?",
     choices: [
       "Requires manual deletion of related rows in the child table",
@@ -61,8 +72,10 @@ export const mysql5 = [
 
     ],
     correctAnswer: "Automatically deletes related rows in the child table when a row in the parent table is deleted",
+    imageURL: null,
   },
   {
+    index: 7,
     question: "Which SQL statement would you use to add a foreign key constraint to an existing table?",
     choices: [
       "ALTER TABLE table_name ADD CONSTRAINT fk_name FOREIGN KEY (column_name) REFERENCES other_table(column_name);",
@@ -71,8 +84,10 @@ export const mysql5 = [
       "ALTER TABLE table_name ADD fk_name FOREIGN KEY (column_name) REFERENCES other_table(column_name);",
     ],
     correctAnswer: "ALTER TABLE table_name ADD CONSTRAINT fk_name FOREIGN KEY (column_name) REFERENCES other_table(column_name);",
+    imageURL: null,
   },
   {
+    index: 8,
     question: "What is an example of a 'one-to-many' relationship in a database?",
     choices: [
       "Two authors can write multiple books",
@@ -81,8 +96,10 @@ export const mysql5 = [
       "Many categories can have different products"
     ],
     correctAnswer: "A single customer can place multiple orders",
+    imageURL: null,
   },
   {
+    index: 9,
     question: "What does the 'UNIQUE' constraint do in a MySQL table?",
     choices: [
       "Allows NULL values in a column",
@@ -91,8 +108,10 @@ export const mysql5 = [
       "Automatically indexes the column"
     ],
     correctAnswer: "Ensures that all values in a column are distinct",
+    imageURL: null,
   },
   {
+    index: 10,
     question: "Which of the following steps are involved in designing and setting up a relational database?",
     choices: [
       "Identifying entities, defining table columns, and modeling relationships",
@@ -101,8 +120,10 @@ export const mysql5 = [
       "Modeling relationships, filling test data, and defining constraints"
     ],
     correctAnswer: "Identification of entities, defining table columns, primary keys, modeling relationships, defining constraints, and filling test data",
+    imageURL: null,
   },
   {
+    index: 11,
     question: "How does using a primary key-foreign key relationship help in a database?",
     choices: [
       "It allows storing duplicate data across tables",
@@ -111,8 +132,10 @@ export const mysql5 = [
       "It automatically indexes all the columns in the database"
     ],
     correctAnswer: "It ensures data integrity by avoiding repeating data across related tables",
+    imageURL: null,
   },
   {
+    index: 12,
     question: "What does cascading allow in relational databases?",
     choices: [
       "It prevents changes to related entities",
@@ -121,8 +144,10 @@ export const mysql5 = [
       "It enables a backup of all related entities",
     ],
     correctAnswer: "It allows changes in one entity to cascade to all related entities",
+    imageURL: null,
   },
   {
+    index: 13,
     question: "What does a relational schema (E/R Diagrams) of a database include?",
     choices: [
       "Only the data stored in the tables",
@@ -131,8 +156,10 @@ export const mysql5 = [
       "Indexes and triggers used by the database",
     ],
     correctAnswer: "Schemas of tables, relationships, and other objects like constraints",
+    imageURL: null,
   },
   {
+    index: 14,
     question: "What is a composite primary key in a join mapping table?",
     choices: [
       "A primary key that consists of a single column",
@@ -141,8 +168,10 @@ export const mysql5 = [
       "A primary key that automatically creates indexes for foreign keys",
     ],
     correctAnswer: "A primary key made up of two or more columns",
+    imageURL: null,
   },
   {
+    index: 15,
     question: "In a one-to-one relationship, why must the foreign key be unique?",
     choices: [
       "To ensure multiple rows can be linked to the same foreign key",
@@ -150,9 +179,11 @@ export const mysql5 = [
       "To enforce a strict one-to-one relationship between two tables",
       "To automatically create indexes for both keys"
     ],
-    correctAnswer: "To enforce a strict one-to-one relationship between two tables"
+    correctAnswer: "To enforce a strict one-to-one relationship between two tables",
+    imageURL: null,
   },
   {
+    index: 16,
     question: "In a one-to-many relationship, what additional column is necessary?",
     choices: [
       "An auto-incremented primary key",
@@ -160,9 +191,11 @@ export const mysql5 = [
       "A foreign key column in the 'many' table",
       "A foreign key column in the 'one' table"
     ],
-    correctAnswer: "A foreign key column in the 'many' table"
+    correctAnswer: "A foreign key column in the 'many' table",
+    imageURL: null,
   },
   {
+    index: 17,
     question: "In a many-to-many relationship, what is required to link the two tables?",
     choices: [
       "A composite key in the first table",
@@ -170,9 +203,11 @@ export const mysql5 = [
       "A primary key made of two columns",
       "A unique foreign key in both tables"
     ],
-    correctAnswer: "A junction (associate) table with foreign keys from both tables"
+    correctAnswer: "A junction (associate) table with foreign keys from both tables",
+    imageURL: null,
   },
   {
+    index: 18,
     question: "In a one-to-one self-relation, what does the foreign key reference?",
     choices: [
       "The primary key of a different table.",

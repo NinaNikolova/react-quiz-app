@@ -1,5 +1,6 @@
 export const mysql7 = [
   {
+    index: 1,
     question: "What is the purpose of a stored procedure in MySQL?",
     choices: [
       "To create a new table in the database",
@@ -8,8 +9,10 @@ export const mysql7 = [
       "To execute a set of SQL statements as a single unit",
     ],
     correctAnswer: "To execute a set of SQL statements as a single unit",
+    imageURL: null,
   },
   {
+    index: 2,
     question: "How do you create a user-defined function in MySQL?",
     choices: [
       "CREATE PROCEDURE function_name(parameters) BEGIN ... END;",
@@ -18,8 +21,10 @@ export const mysql7 = [
       "CREATE EVENT function_name ON SCHEDULE EVERY interval DO ...;",
     ],
     correctAnswer: "CREATE FUNCTION function_name(parameters) RETURNS return_type BEGIN ... END;",
+    imageURL: null,
   },
   {
+    index: 3,
     question: "What is a trigger in MySQL?",
     choices: [
       "A function that returns a value based on a query",
@@ -28,8 +33,10 @@ export const mysql7 = [
       "A set of instructions that are automatically executed in response to certain events on a table",
     ],
     correctAnswer: "A set of instructions that are automatically executed in response to certain events on a table",
+    imageURL: null,
   },
   {
+    index: 4,
     question: "Which type of trigger is activated before an INSERT operation on a table?",
     choices: [
       "BEFORE UPDATE",
@@ -38,8 +45,10 @@ export const mysql7 = [
       "AFTER DELETE",
     ],
     correctAnswer: "BEFORE INSERT",
+    imageURL: null,
   },
   {
+    index: 5,
     question: "How can you ensure that a series of SQL statements are executed as a single transaction?",
     choices: [
       "By creating a stored procedure",
@@ -49,8 +58,10 @@ export const mysql7 = [
 
     ],
     correctAnswer: "By using the START TRANSACTION, COMMIT, and ROLLBACK statements",
+    imageURL: null,
   },
   {
+    index: 6,
     question: "What is the purpose of the COMMIT statement in a transaction?",
     choices: [
       "To undo changes made during the transaction",
@@ -59,8 +70,10 @@ export const mysql7 = [
       "To check the status of the transaction",
     ],
     correctAnswer: "To save all changes made during the transaction",
+    imageURL: null,
   },
   {
+    index: 7,
     question: "How do you create a trigger that executes after an UPDATE operation on a table?",
     choices: [
       "CREATE TRIGGER trigger_name BEFORE UPDATE ON table_name FOR EACH ROW BEGIN ... END;",
@@ -69,8 +82,10 @@ export const mysql7 = [
       "CREATE TRIGGER trigger_name BEFORE DELETE ON table_name FOR EACH ROW BEGIN ... END;",
     ],
     correctAnswer: "CREATE TRIGGER trigger_name AFTER UPDATE ON table_name FOR EACH ROW BEGIN ... END;",
+    imageURL: null,
   },
   {
+    index: 8,
     question: "What is a user-defined function (UDF) in MySQL?",
     choices: [
       "A predefined function provided by MySQL for mathematical calculations",
@@ -80,8 +95,10 @@ export const mysql7 = [
       "A built-in trigger that executes automatically",
     ],
     correctAnswer: "A function created by the user that can return a value and be used in SQL statements",
+    imageURL: null,
   },
   {
+    index: 9,
     question: "Which statement is used to handle exceptions in a MySQL stored procedure?",
     choices: [
       "BEGIN ... END",
@@ -91,8 +108,10 @@ export const mysql7 = [
 
     ],
     correctAnswer: "DECLARE ... HANDLER",
+    imageURL: null,
   },
   {
+    index: 10,
     question: "How do you roll back a transaction in MySQL?",
     choices: [
       "UNDO;",
@@ -101,8 +120,10 @@ export const mysql7 = [
       "ROLLBACK;",
     ],
     correctAnswer: "ROLLBACK;",
+    imageURL: null,
   },
   {
+    index: 11,
     question: "What is the purpose of the DELIMITER command in MySQL when creating stored procedures or triggers?",
     choices: [
       "To define a new delimiter for database tables",
@@ -111,5 +132,6 @@ export const mysql7 = [
       "To set the default character set for the procedure",
     ],
     correctAnswer: "To change the statement delimiter temporarily so that the entire procedure or trigger can be defined",
+    imageURL: null,
   },
 ];

@@ -16,7 +16,7 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
   const [wrongQuestions, setWrongQuestions] = useState([]);
 
   const questions = getQuestions(selectedQuiz, { mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 });
-  const { question, choices, correctAnswer } = questions[currentQuestion];
+  const { question, choices, correctAnswer, imageURL } = questions[currentQuestion];
 
   const onAnwswerClick = (answer, index) => {
     setAnswerIdx(index);
@@ -73,6 +73,7 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
             answerIdx={answerIdx}
             correctAnswer={correctAnswer}
             onAnwswerClick={onAnwswerClick}
+            imageURL={imageURL}
           />
           <div className="footer">
             <button onClick={onClickNext} disabled={answerIdx === null}>
