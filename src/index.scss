@@ -22,12 +22,11 @@ body {
 }
 
 .quiz-container {
-  width: 100%;
-  max-width: 600px; /* Maximum width for the quiz container */
+  width: 90%;
   background: $bg;
   border-radius: 4px;
   padding: 20px; /* Add padding inside the container */
-  margin: 20px auto; /* Center the container with auto margin */
+  margin: 0 auto; /* Center the container with auto margin */
   box-sizing: border-box; /* Ensure padding doesn't affect width */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
   
@@ -51,7 +50,7 @@ body {
 
   ul {
     margin-top: 20px;
-    margin-left: -40px;
+    margin-left: -20px;
 
     li {
       text-decoration: none;
