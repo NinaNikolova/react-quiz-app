@@ -134,4 +134,51 @@ export const mysql7 = [
     correctAnswer: "To change the statement delimiter temporarily so that the entire procedure or trigger can be defined",
     imageURL: null,
   },
+  {
+    index: 12,
+    question: "Why do we declare the `DELIMITER` when creating functions in MySQL?",
+    choices: [
+      "To define a specific character set for the function",
+      "To separate SQL statements in the function from each other",
+      "To temporarily change the statement delimiter to allow function definition",
+      "To ensure that transactions are correctly committed within the function"
+    ],
+    correctAnswer: "To temporarily change the statement delimiter to allow function definition",
+    imageURL: null
+  },
+  {
+    index: 13,
+    question: "What does the `DETERMINISTIC` keyword mean when used in a MySQL function?",
+    choices: [
+      "The function's result is independent of its input parameters",
+      "The function always returns the same result for the same input parameters - pure",
+      "The function will execute only once per session",
+      "The function cannot contain any SQL queries"
+    ],
+    correctAnswer: "The function always returns the same result for the same input parameters - pure",
+    imageURL: null
+  },
+  {
+    index: 14,
+    question: "Can MySQL functions or stored procedures be accessed from a Java application?",
+    choices: [
+      "No, Java cannot interact with MySQL functions or procedures",
+      "Only procedures can be accessed, but not stored functions",
+      "Java applications must use SQL scripts instead of calling functions or procedures"
+    ],
+    correctAnswer: "Only procedures can be accessed, but not stored functions",
+    imageURL: null
+  },
+  {
+    index: 15,
+    question: "Which keywords are used to call functions and stored procedures in MySQL?",
+    choices: [
+      "SELECT for functions, CALL for procedures",
+      "CALL for functions, EXECUTE for procedures",
+      "RUN for functions, CALL for procedures",
+      "EXECUTE for functions, CALL for procedures"
+    ],
+    correctAnswer: "SELECT for functions, CALL for procedures",
+    imageURL: null
+  },
 ];

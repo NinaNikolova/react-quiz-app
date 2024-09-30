@@ -94,7 +94,7 @@ export const mysql6 = [
       "INNER JOIN",
     ],
     correctAnswer: "FULL JOIN(OUTER JOIN)",
-    imageURL: 'https://www.w3schools.com/sql/img_full_outer_join.png',
+    imageURL: 'https://fthiella.github.io/images/full-outer-join.gif',
   },
   {
     index: 9,
@@ -142,7 +142,7 @@ export const mysql6 = [
       "It means FULL JOIN can be used in MySQL without any limitations"
     ],
     correctAnswer: "It means MySQL does not natively support a FULL JOIN to combine matching and non-matching rows from two tables",
-    imageURL: 'https://www.w3schools.com/Sql/img_full_outer_join.png',
+    imageURL: 'https://fthiella.github.io/images/full-outer-join.gif',
   },
   {
     index: 13,
