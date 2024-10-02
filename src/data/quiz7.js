@@ -181,4 +181,28 @@ export const mysql7 = [
     correctAnswer: "SELECT for functions, CALL for procedures",
     imageURL: null
   },
+  {
+    index: 16,
+    question: "What is a transaction in MySQL?",
+    choices: [
+      "A group of SQL queries that are executed in isolation and treated as a single unit",
+      "A command used to commit changes to the database",
+      "A function that runs SQL queries in parallel",
+      "A process of backing up the entire database"
+    ],
+    correctAnswer: "A group of SQL queries that are executed in isolation and treated as a single unit",
+    imageURL: null
+  },
+  {
+    index: 17,
+    question: "What does ACID stand for in MySQL?",
+    choices: [
+      "Atomicity, Consistency, Isolation, Durability",
+      "Automation, Consistency, Integration, Data",
+      "Atomicity, Control, Indexing, Durability",
+      "Accuracy, Control, Isolation, Data"
+    ],
+    correctAnswer: "Atomicity, Consistency, Isolation, Durability",
+    imageURL: 'https://beginnersbook.com/wp-content/uploads/2015/04/ACID_DBMS.jpg'
+  }
 ];

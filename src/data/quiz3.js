@@ -386,6 +386,18 @@ export const mysql3 = [
       "Error"
     ],
     correctAnswer: "A"
+  },
+  {
+    index: 33,
+    question: "What does the query `SELECT DATEDIFF(now(), '2024-01-01')` return in MySQL?",
+    choices: [
+      "The number of months between today's date and January 1, 2024",
+      "The number of days between today's date and January 1, 2024",
+      "The difference in years between today's date and January 1, 2024",
+      "The number of weeks between today's date and January 1, 2024"
+    ],
+    correctAnswer: "The number of days between today's date and January 1, 2024",
+    imageURL: null
   }
 
 

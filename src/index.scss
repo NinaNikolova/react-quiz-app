@@ -23,6 +23,7 @@ body {
 
 .quiz-container {
   width: 90%;
+  max-width: 600px;
   background: $bg;
   border-radius: 4px;
   padding: 20px; /* Add padding inside the container */
@@ -149,7 +150,7 @@ body {
 
 .question-image {
   width: auto;
-  height: 100px;
+  height: 160px;
   object-fit: contain; 
   margin: 10px 0;
 }
