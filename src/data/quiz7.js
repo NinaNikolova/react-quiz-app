@@ -204,5 +204,53 @@ export const mysql7 = [
     ],
     correctAnswer: "Atomicity, Consistency, Isolation, Durability",
     imageURL: 'https://beginnersbook.com/wp-content/uploads/2015/04/ACID_DBMS.jpg'
+  },
+  {
+    index: 18,
+    question: "What do the OLD and NEW keywords represent in MySQL triggers?",
+    choices: [
+      "OLD refers to the previous row data, and NEW refers to the new row data in INSERT, UPDATE, or DELETE operations.",
+      "OLD is used to revert the database to an old state, and NEW is used to create new tables.",
+      "OLD and NEW are used to backup and restore data in the database.",
+      "OLD refers to outdated queries, and NEW refers to new queries added to the database."
+    ],
+    correctAnswer: "OLD refers to the previous row data, and NEW refers to the new row data in INSERT, UPDATE, or DELETE operations.",
+    imageURL: null
+  },
+  {
+    index: 19,
+    question: "In which type of trigger can you only use the NEW keyword?",
+    choices: [
+      "BEFORE INSERT",
+      "BEFORE DELETE",
+      "AFTER DELETE",
+      "BEFORE UPDATE"
+    ],
+    correctAnswer: "BEFORE INSERT",
+    imageURL: null
+  },
+  {
+    index: 20,
+    question: "When would you use the OLD keyword in a DELETE trigger?",
+    choices: [
+      "To access the row data before it is deleted",
+      "To retrieve the previous version of the table",
+      "To restore deleted rows automatically",
+      "To update row data after deletion"
+    ],
+    correctAnswer: "To access the row data before it is deleted",
+    imageURL: null
+  },
+  {
+    index: 21,
+    question: "Can both OLD and NEW be used in an UPDATE trigger?",
+    choices: [
+      "Yes, because OLD holds the previous data and NEW holds the updated data.",
+      "No, only NEW can be used.",
+      "No, only OLD can be used.",
+      "Yes, but only in AFTER UPDATE triggers."
+    ],
+    correctAnswer: "Yes, because OLD holds the previous data and NEW holds the updated data.",
+    imageURL: null
   }
 ];
