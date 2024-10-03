@@ -252,5 +252,17 @@ export const mysql7 = [
     ],
     correctAnswer: "Yes, because OLD holds the previous data and NEW holds the updated data.",
     imageURL: null
+  },
+  {
+    index: 22,
+    question: "What is the main difference between MySQL functions and procedures?",
+    choices: [
+      "Functions must return a value; procedures do not need to return a value.",
+      "Procedures can be used in SQL expressions like SELECT; functions cannot.",
+      "Functions perform complex operations like data modifications; procedures are for simple calculations.",
+      "There is no difference between MySQL functions and procedures."
+    ],
+    correctAnswer: "Functions must return a value; procedures do not need to return a value.",
+    imageURL: null
   }
 ];
