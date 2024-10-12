@@ -8,11 +8,15 @@ $foreground: #2d264b;
 body {
   width:100%;
   font-family: monospace;
+  background: url('./assets/background.jpg');
+  background-size: cover; /* Ensures the image covers the whole viewport */
+  background-position: center; /* Centers the background image */
   color: $foreground;
   display: flex;
   justify-content: center; 
   margin: 0 auto; /* Reset browser default margins */
   margin-top: 20px;
+  padding: 20px; /* Add some padding to the body */
   height: 100vh; /* Take full viewport height */
   box-sizing: border-box;
 }
