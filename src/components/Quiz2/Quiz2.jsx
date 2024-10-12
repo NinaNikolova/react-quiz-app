@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { resultInitalState } from "../../constants";
-import QuizSelector from "../Quiz1/QuizSelector";
+import QuizSelector from "../Quiz2/QuizSelector";
 import Result from "../Result";
 import Question from "../Question";
 import { getQuestions } from "../../utils/getQuestions";
