@@ -9,15 +9,15 @@ body {
   width:100%;
   font-family: monospace;
   background: url('./assets/background.jpg');
-  background-size: cover; /* Ensures the image covers the whole viewport */
-  background-position: center; /* Centers the background image */
+  background-size: cover; 
+  background-position: center; 
   color: $foreground;
   display: flex;
   justify-content: center; 
-  margin: 0 auto; /* Reset browser default margins */
+  margin: 0 auto; 
   margin-top: 20px;
-  padding: 20px; /* Add some padding to the body */
-  height: 100vh; /* Take full viewport height */
+  padding: 20px;
+  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -170,22 +170,21 @@ body {
 
 .home-link {
   text-decoration: none;
-  color: inherit; /* Use the inherited color for the text */
+  color: inherit; 
   font-size: 46px;
 }
 
 .tooltip {
   visibility: hidden;
   width: 120px;
-  // background-color: lightgray;
   color: green($color: #000000);
   text-align: center;
   border-radius: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 100%; /* Position above the link */
+  bottom: 100%; 
   left: 50%;
-  margin-left: -60px; /* Center the tooltip */
+  margin-left: -60px; 
   opacity: 0;
   transition: opacity 0.3s;
   font-size: 16px;
@@ -193,13 +192,13 @@ body {
 
 .home-link-container:hover .tooltip {
   visibility: visible;
-  opacity: 1; /* Show tooltip on hover */
+  opacity: 1; 
 }
 .nav-icon {
-  width: 60px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 8px; /* Add space between image and text */
-  vertical-align: middle; /* Align the image vertically */
+  width: 60px; 
+  height: auto;
+  margin-right: 8px; 
+  vertical-align: middle;
 }
 @media only screen and (max-width: 500px) {
   body {
