@@ -12,6 +12,8 @@ import { mysql4 } from "../../data2/quiz4";
 import { mysql5 } from "../../data2/quiz5";
 import { mysql6 } from "../../data2/quiz6";
 import { mysql7 } from "../../data2/quiz7";
+import { mysql8 } from "../../data2/quiz8";
+import { mysql9 } from "../../data2/quiz9";
 import HomeLink from "../HomeLink/HomeLink";
 
 const Quiz = () => {
@@ -23,7 +25,7 @@ const Quiz = () => {
   const [selectedQuiz, setSelectedQuiz] = useState("mysql1");
   const [wrongQuestions, setWrongQuestions] = useState([]);
 
-  const questions = getQuestions(selectedQuiz, { mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 });
+  const questions = getQuestions(selectedQuiz, { mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7, mysql8, mysql9 });
   const { question, choices, correctAnswer, imageURL } = questions[currentQuestion];
 
   const onAnwswerClick = (answer, index) => {

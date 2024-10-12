@@ -9,8 +9,8 @@ export default function QuizSelector({ selectedQuiz, handleQuizChange }) {
                 <option value="mysql5">Spring Data Intro</option>
                 <option value="mysql6">Spring Data Advanced Querying</option>
                 <option value="mysql7">Spring Data Auto Mapping Objects</option>
-                <option value="mysql6">JSON Processing</option>
-                <option value="mysql7">XML Processing</option>
+                <option value="mysql8">JSON Processing</option>
+                <option value="mysql9">XML Processing</option>
             </select>
         </div>
     )
