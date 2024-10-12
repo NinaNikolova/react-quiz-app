@@ -1,12 +1,20 @@
 import { useState } from "react";
-import { resultInitalState } from "../constants";
+import { resultInitalState } from "../../constants";
 import QuizSelector from "./QuizSelector";
-import Result from "./Result";
-import Question from "./Question";
-import { getQuestions } from "../utils/getQuestions";
-import { calculateResult } from "../utils/calculateResult";
+import Result from "../Result";
+import Question from "../Question";
+import { getQuestions } from "../../utils/getQuestions";
+import { calculateResult } from "../../utils/calculateResult";
+import { mysql1 } from "../../data/quiz1";
+import { mysql2 } from "../../data/quiz2";
+import { mysql3 } from "../../data/quiz3";
+import { mysql4 } from "../../data/quiz4";
+import { mysql5 } from "../../data/quiz5";
+import { mysql6 } from "../../data/quiz6";
+import { mysql7 } from "../../data/quiz7";
+import HomeLink from "../HomeLink/HomeLink";
 
-const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
+const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answerIdx, setAnswerIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
@@ -60,7 +68,9 @@ const Quiz = ({ mysql1, mysql2, mysql3, mysql4, mysql5, mysql6, mysql7 }) => {
 
   return (
     <div className="quiz-container">
-      <h2>MySQL quiz</h2>
+      <div className="heading"><h2>Object-Oriented Modeling and Software</h2>
+        <HomeLink />
+      </div>
 
       <QuizSelector selectedQuiz={selectedQuiz} handleQuizChange={handleQuizChange} />
       {!showResult ? (

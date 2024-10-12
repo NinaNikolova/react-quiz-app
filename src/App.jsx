@@ -1,16 +1,18 @@
-import Quiz from "./components/Quiz";
-import { mysql1 } from "./data/quiz1";
-import { mysql2 } from "./data/quiz2";
-import { mysql3 } from "./data/quiz3";
-import { mysql4 } from "./data/quiz4";
-import { mysql5 } from "./data/quiz5";
-import { mysql6 } from "./data/quiz6";
-import { mysql7 } from "./data/quiz7";
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Quiz from './components/Quiz1/Quiz';
+import Quiz2 from './components/Quiz2/Quiz2';
 
 function App() {
-
-  return <Quiz mysql1={mysql1} mysql2={mysql2} mysql3={mysql3} mysql4={mysql4} mysql5={mysql5} mysql6={mysql6} mysql7={mysql7} />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/quiz2" element={<Quiz2 />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
