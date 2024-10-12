@@ -68,7 +68,7 @@ const Quiz = () => {
 
   return (
     <div className="quiz-container">
-      <div className="heading"><h2>Object-Oriented Modeling and Software</h2>
+      <div className="heading"><h2>MySQL</h2>
         <HomeLink />
       </div>
 

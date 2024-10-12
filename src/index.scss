@@ -6,32 +6,27 @@ $disabled: #9c9c9c;
 $foreground: #2d264b;
 
 body {
+  width:100%;
   font-family: monospace;
-  background: url('./assets/background.jpg');
-  background-size: cover; /* Ensures the image covers the whole viewport */
-  background-position: center; /* Centers the background image */
   color: $foreground;
   display: flex;
   justify-content: center; 
   margin: 0 auto; /* Reset browser default margins */
   margin-top: 20px;
-  padding: 20px; /* Add some padding to the body */
   height: 100vh; /* Take full viewport height */
   box-sizing: border-box;
-
 }
 
 .quiz-container {
-  width: 90%;
-  max-width: 600px;
+  max-width: 90%;
   background: $bg;
   border-radius: 4px;
-  padding: 20px; /* Add padding inside the container */
-  margin: 0 auto; /* Center the container with auto margin */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  padding:20px; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   justify-content: center;
-  
+
   .active-question-no {
     font-size: 32px;
     font-weight: 500;
@@ -52,8 +47,8 @@ body {
   }
 
   ul {
-    margin-top: 20px;
-    margin-left: -20px;
+    margin-left: 0; 
+    padding-left:20px;
 
     li {
       text-decoration: none;
@@ -64,8 +59,9 @@ body {
       border: 1px solid $disabled;
       border-radius: 16px;
       padding: 11px;
-      margin-top: 15px;
+      margin-block: 12px;
       cursor: pointer;
+      
     }
 
     .selected-answer {
@@ -73,7 +69,7 @@ body {
       border: 1px solid $accent;
       color: $bg;
       margin: 0 auto;
-    margin-top: 15px;  
+      margin-block: 12px;
     }
   }
 
@@ -124,19 +120,20 @@ body {
 .quiz-selector {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin-inline: 2rem;
+  margin-bottom: 1.6rem;
   font-family: Arial, sans-serif;
   width: 90%;
   justify-content: center;
   align-items: center;
 }
 
-.quiz-selector label {
+.quiz-selector label{
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
-.quiz-selector select {
+.quiz-selector select{
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -148,7 +145,6 @@ body {
 
 .quiz-selector select:focus {
   outline: none;
-  border-color: #007BFF;
 }
 
 .question-image {

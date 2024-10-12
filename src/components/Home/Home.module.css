@@ -50,9 +50,9 @@
     /* Bold text */
     transition: background-color 0.3s;
     /* Smooth background transition */
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     /* Padding around the link */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     /* Rounded corners for links */
 }
 
@@ -83,13 +83,15 @@ li {
 
 article {
     width: 90%;
-    height: 70px;
+    height: 50px;
     border-radius: 30px 0px 30px 0px;
     background-color: red;
     position: relative;
     animation: myfirst 10s linear 2s infinite alternate;
     padding-inline: 10px;
+    padding-bottom: 5px;
     padding-top: 10px;
+    font-size: 24px;
 }
 
 @keyframes rotate {
