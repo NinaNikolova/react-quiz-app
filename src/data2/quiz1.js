@@ -155,7 +155,80 @@ export const mysql1 = [
     ],
     correctAnswer: "By using DriverManager and a Connection class.",
     imageURL: null,
+  },
+  {
+    index: 14,
+    question: "How do we retrieve the result in JDBC using the `ResultSet` and `PreparedStatement` classes?",
+    choices: [
+      "We execute the query with `PreparedStatement` and use `ResultSet` to access the results",
+      "We execute the query with `ResultSet` and process the results using `PreparedStatement`",
+      "We use `PreparedStatement` only to retrieve data directly",
+      "We use `ResultSet` to write data into the database",
+    ],
+    correctAnswer: "We execute the query with `PreparedStatement` and use `ResultSet` to access the results",
+    imageURL: null,
+  },
+  {
+    index: 15,
+    question: "What method is commonly used to iterate through the rows of a `ResultSet` in JDBC?",
+    choices: [
+      "hasNext()",
+      "moveNext()",
+      "next()",
+      "getRow()",
+    ],
+    correctAnswer: "next()",
+    imageURL: null,
+  },
+  {
+    index: 16,
+    question: "What does it mean to access databases on a programmer level?",
+    choices: [
+      "Database access requires manual intervention",
+      "Database access can be automated through programming",
+      "Only database administrators can access the database",
+      "It requires advanced SQL knowledge",
+    ],
+    correctAnswer: "Database access can be automated through programming",
+    imageURL: null,
+  },
+  {
+    index: 17,
+    question: "In larger applications, how can we achieve database abstraction?",
+    choices: [
+      "By using custom SQL logic directly in the application code",
+      "By encapsulating custom SQL logic in methods",
+      "By avoiding any database interactions",
+      "By connecting directly to the database with no intermediary",
+    ],
+    correctAnswer: "By encapsulating custom SQL logic in methods",
+    imageURL: null,
+  },
+  {
+    index: 18,
+    question: "Which of the following statements about JDBC/Java Database Connectivity/ APIs is NOT true?",
+    choices: [
+      "Making a connection to a database.",
+      "Creating and executing SQLqueries in the database",
+      "Viewing & Modifying the resulting records",
+      "JDBC does not allow for creating and executing SQL queries."
+    ],
+    correctAnswer: "JDBC does not allow for creating and executing SQL queries.",
+    imageURL: null,
+  },
+  {
+    index: 19,
+    question: "Which of the following statements about JDBC architecture is NOT true?",
+    choices: [
+      "The JDBC API provides the connection between the application and the driver manager.",
+      "The JDBC Driver Manager establishes a connection with the correct driver.",
+      "The JDBC architecture supports only a single driver connected to a database.",
+      "The JDBC Driver handles communications with the database.",
+    ],
+    correctAnswer: "The JDBC architecture supports only a single driver connected to a database.",
+    imageURL: null,
   }
+
 
 
 ]
