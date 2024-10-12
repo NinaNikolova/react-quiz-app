@@ -120,6 +120,42 @@ export const mysql1 = [
     correctAnswer: "It commits each SQL statement as it is executed.",
     imageURL: null,
   },
+  {
+    index: 11,
+    question: "What is the purpose of using Object-Relational Mapping (ORM) frameworks in development?",
+    choices: [
+      "To manually handle SQL queries and database interactions.",
+      "To map Java classes and data types to database tables and SQL data types, generate SQL calls and relievesthe developer from the manualhandling",
+      "To handle low-level database connections directly.",
+      "To prevent the generation of SQL calls during development."
+    ],
+    correctAnswer: "To map Java classes and data types to database tables and SQL data types, generate SQL calls and relievesthe developer from the manualhandling",
+    imageURL: null,
+  },
+  {
+    index: 12,
+    question: "Which of the following are examples of ORM frameworks in Java?",
+    choices: [
+      "Spring Boot, JUnit, Mockito",
+      "Entity Framework, NHibernate",
+      "Doctrine, Laravel(Eloquent)",
+      "Hibernate, EclipseLink, TopLink",
+    ],
+    correctAnswer: "Hibernate, EclipseLink, TopLink",
+    imageURL: null,
+  },
+  {
+    index: 13,
+    question: "How do you establish a connection to a MySQL database using MySQL Connector/J in Java?",
+    choices: [
+      "By using a DataSource and a Statement class.",
+      "By using DriverManager and a Connection class.",
+      "By using JDBC Template and a Session class.",
+      "By using a DriverManager and a ResultSet class."
+    ],
+    correctAnswer: "By using DriverManager and a Connection class.",
+    imageURL: null,
+  }
 
 
 ]

@@ -22,7 +22,7 @@ body {
 }
 
 .quiz-container {
-  max-width: 90%;
+  width: 600px;
   background: $bg;
   border-radius: 4px;
   padding:20px; 
@@ -200,6 +200,15 @@ body {
   margin-right: 8px; 
   vertical-align: middle;
 }
+
+
+/* For mobile phones (screen width below 768px) */
+@media only screen and (max-width: 768px) {
+  .quiz-container {
+    width: 90%; /* Make it almost full width for small screens */
+  }
+}
+
 @media only screen and (max-width: 500px) {
   body {
     zoom: 90%;
