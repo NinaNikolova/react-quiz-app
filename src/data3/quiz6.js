@@ -1,124 +1,91 @@
+// Solid
 export const mysql6 = [
   {
     index: 1,
-    question: "What is the purpose of using the `@Query` annotation in Spring Data?",
+    question: "What does the 'S' in SOLID stand for?",
     choices: [
-      "To define custom SQL queries",
-      "To map entities to database tables",
-      "To create RESTful APIs",
-      "To enable pagination",
+      "Single Responsibility",
+      "Simple Representation",
+      "Shared Resource",
+      "Structured Logic"
     ],
-    correctAnswer: "To define custom SQL queries",
-    imageURL: null,
+    correctAnswer: "Single Responsibility",
+    imageURL: null
   },
   {
     index: 2,
-    question: "How can you specify a native SQL query in Spring Data JPA?",
+    question: "What is the Single Responsibility Principle?",
     choices: [
-      "By using `@NativeQuery`",
-      "By setting `nativeQuery = true` in the `@Query` annotation",
-      "By using `@SQLQuery`",
-      "By specifying `native` in the repository method name",
+      "A class should have only one responsibility",
+      "A class should be open for extension",
+      "A class should use interfaces for all methods",
+      "A class should depend on low-level modules"
     ],
-    correctAnswer: "By setting `nativeQuery = true` in the `@Query` annotation",
-    imageURL: null,
+    correctAnswer: "A class should have only one responsibility",
+    imageURL: null
   },
   {
     index: 3,
-    question: "Which keyword is used in a Spring Data query method to indicate sorting?",
+    question: "What does the Open/Closed Principle state?",
     choices: [
-      "sortBy",
-      "orderBy",
-      "Sort",
-      "Order",
+      "Classes should be open for modification and closed for extension",
+      "Classes should be open for extension and closed for modification",
+      "Classes should have a single responsibility",
+      "Classes should use interfaces to limit functionality"
     ],
-    correctAnswer: "OrderBy",
-    imageURL: null,
+    correctAnswer: "Classes should be open for extension and closed for modification",
+    imageURL: null
   },
   {
     index: 4,
-    question: "What is the purpose of the `@Param` annotation in a Spring Data query?",
+    question: "What is the Liskov Substitution Principle?",
     choices: [
-      "To specify a named parameter",
-      "To indicate a pagination parameter",
-      "To define a custom query name",
-      "To manage transactions",
+      "Derived types must be completely substitutable for their base types /Производните типове трябва да са напълно заместими за техните базови типове/",
+      "High-level modules should depend on low-level modules",
+      "Clients should not depend on methods they do not use",
+      "A class should be designed for maximum reuse"
     ],
-    correctAnswer: "To specify a named parameter",
-    imageURL: null,
+    correctAnswer: "Derived types must be completely substitutable for their base types /Производните типове трябва да са напълно заместими за техните базови типове/",
+    imageURL: null
   },
   {
     index: 5,
-    question: "How do you implement pagination in Spring Data queries?",
+    question: "What does the Interface Segregation /Разделяне на интерфейса/ Principle emphasize?",
     choices: [
-      "Using `Pageable` parameter",
-      "Using `List` parameter",
-      "Using `Offset` parameter",
-      "Using `Limit` parameter",
+      "Clients should depend on general interfaces",
+      "Many specific interfaces are better than one general interface",
+      "Classes should have multiple responsibilities",
+      "Interfaces should not change over time"
     ],
-    correctAnswer: "Using `Pageable` parameter",
-    imageURL: null,
+    correctAnswer: "Many specific interfaces are better than one general interface",
+    imageURL: null
   },
   {
     index: 6,
-    question: "What is the result type of a Spring Data query that returns a single entity?",
+    question: "What is the Dependency Inversion Principle?",
     choices: [
-      "List",
-      "Optional",
-      "Page",
-      "Set",
+      "High-level modules should depend on low-level modules",
+      "High-level modules should not depend on low-level modules",
+      "Modules should depend on concrete classes",
+      "Abstractions should depend on details"
     ],
-    correctAnswer: "Optional",
-    imageURL: null,
+    correctAnswer: "High-level modules should not depend on low-level modules",
+    imageURL: null
   },
   {
     index: 7,
-    question: "Which interface provides methods for pagination and sorting in Spring Data?",
+    question: "Which of the following is NOT one of the SOLID principles?",
     choices: [
-      "Pageable",
-      "Sort",
-      "Page",
-      "Slice",
+      "Single Responsibility",
+      "Open/Closed",
+      "Interface Complexity",
+      "Liskov Substitution",
+      "Dependency Inversion",
+      "Interface Segregation"
     ],
-    correctAnswer: "Page",
-    imageURL: null,
-  },
-  {
-    index: 8,
-    question: "What is the purpose of `@QueryHints` in Spring Data?",
-    choices: [
-      "To specify query execution hints",
-      "To define custom query parameters",
-      "To optimize database connections",
-      "To cache query results",
-    ],
-    correctAnswer: "To specify query execution hints",
-    imageURL: null,
-  },
-  {
-    index: 9,
-    question: "How do you define a derived query method for finding entities by a specific attribute?",
-    choices: [
-      "Using the `findBy` prefix",
-      "Using the `searchBy` prefix",
-      "Using the `queryBy` prefix",
-      "Using the `getBy` prefix",
-    ],
-    correctAnswer: "Using the `findBy` prefix",
-    imageURL: null,
-  },
-  {
-    index: 10,
-    question: "Which of the following is a correct way to use a criteria query in Spring Data?",
-    choices: [
-      "Using `CriteriaBuilder` and `CriteriaQuery`",
-      "Using `JPAQuery` and `JPQL`",
-      "Using `NativeQuery` and `EntityManager`",
-      "Using `HQL` and `SessionFactory`",
-    ],
-    correctAnswer: "Using `CriteriaBuilder` and `CriteriaQuery`",
-    imageURL: null,
-  },
+    correctAnswer: "Interface Complexity",
+    imageURL: null
+  }
 
 
 ];
