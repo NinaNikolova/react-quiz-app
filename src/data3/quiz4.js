@@ -1,123 +1,88 @@
+// Interfaces and Abstraction
 export const mysql4 = [
   {
     index: 1,
-    question: "What does 'Code First' mean in the context of Hibernate?",
+    question: "What does abstraction mean in Object-Oriented Programming?",
     choices: [
-      "Creating database tables before coding",
-      "Generating database schema from code",
-      "Writing SQL code first",
-      "Mapping database tables to code manually",
+      "Ignoring unnecessary details and focusing on what matters",
+      "Combining multiple classes into one",
+      "Making a plan for creating objects",
+      "Hiding everything in a class"
     ],
-    correctAnswer: "Generating database schema from code",
-    imageURL: null,
+    correctAnswer: "Ignoring unnecessary details and focusing on what matters",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which annotation is used to specify the primary key in a Code First entity?",
+    question: "How can you achieve abstraction in Java?",
     choices: [
-      "@Id",
-      "@PrimaryKey",
-      "@Key",
-      "@EntityKey",
+      "Using Interfaces",
+      "Using Abstract Classes",
+      "Both Interfaces and Abstract Classes",
+      "None of the above"
     ],
-    correctAnswer: "@Id",
-    imageURL: null,
+    correctAnswer: "Both Interfaces and Abstract Classes",
+    imageURL: null
   },
   {
     index: 3,
-    question: "In a Code First approach, which Hibernate annotation is used to define a one-to-many relationship?",
+    question: "What is a main difference between an interface and an abstract class?",
     choices: [
-      "@ManyToOne",
-      "@OneToMany",
-      "@OneToOne",
-      "@ManyToMany",
+      "An interface can have variables; an abstract class cannot",
+      "An abstract class can have some methods with code; an interface cannot",
+      "You can use multiple interfaces; you can only use one abstract class",
+      "An interface can have a special method; an abstract class cannot"
     ],
-    correctAnswer: "@OneToMany",
-    imageURL: null,
+    correctAnswer: "You can use multiple interfaces; you can only use one abstract class",
+    imageURL: null
   },
   {
     index: 4,
-    question: "What is the purpose of the `@GeneratedValue` annotation in Hibernate?",
+    question: "What keyword do you use to create an interface in Java?",
     choices: [
-      "To auto-generate primary key values",
-      "To specify the database table name",
-      "To enforce unique constraints",
-      "To manage transactions",
+      "abstract",
+      "interface",
+      "class",
+      "public"
     ],
-    correctAnswer: "To auto-generate primary key values",
-    imageURL: null,
+    correctAnswer: "interface",
+    imageURL: null
   },
   {
     index: 5,
-    question: "Which class is typically used to create a Hibernate `SessionFactory` in a Code First approach?",
+    question: "What is a default method in an interface?",
     choices: [
-      "Configuration",
-      "Session",
-      "EntityManager",
-      "Factory",
+      "A method that cannot be changed",
+      "A method with code that can be shared",
+      "A method that must be used by all classes",
+      "A method that can only be used in one place"
     ],
-    correctAnswer: "Configuration",
-    imageURL: null,
+    correctAnswer: "A method with code that can be shared",
+    imageURL: null
   },
   {
     index: 6,
-    question: "What method is used to update an existing entity in Hibernate Code First?",
+    question: "When should you use an interface instead of an abstract class?",
     choices: [
-      "save()",
-      "update()",
-      "merge()",
-      "persist()",
+      "When you want to give a default behavior",
+      "When you want to have variables",
+      "When you want to allow multiple inheritance",
+      "When you want to share code"
     ],
-    correctAnswer: "update()",
-    imageURL: null,
+    correctAnswer: "When you want to allow multiple inheritance",
+    imageURL: null
   },
   {
     index: 7,
-    question: "How do you specify a unique constraint on an entity field in Hibernate Code First?",
+    question: "What is an interface in Java?",
     choices: [
-      "@Unique",
-      "@Column(unique = true)",
-      "@Id",
-      "@Constraint",
+      "A class that you cannot create objects from",
+      "A guide that tells classes what methods to use",
+      "A type of abstract class with some methods already written",
+      "A method that can be used anywhere"
     ],
-    correctAnswer: "@Column(unique = true)",
-    imageURL: null,
-  },
-  {
-    index: 8,
-    question: "In a Code First approach, which method is used to delete an entity?",
-    choices: [
-      "remove()",
-      "delete()",
-      "destroy()",
-      "erase()",
-    ],
-    correctAnswer: "remove()",
-    imageURL: null,
-  },
-  {
-    index: 9,
-    question: "Which annotation is used to specify a many-to-many relationship in Hibernate Code First?",
-    choices: [
-      "@ManyToMany",
-      "@OneToMany",
-      "@ManyToOne",
-      "@Relationship",
-    ],
-    correctAnswer: "@ManyToMany",
-    imageURL: null,
-  },
-  {
-    index: 10,
-    question: "What is the role of the `@Table` annotation in a Hibernate Code First entity?",
-    choices: [
-      "To define the entity's primary key",
-      "To specify the database table name",
-      "To map relationships",
-      "To configure entity caching",
-    ],
-    correctAnswer: "To specify the database table name",
-    imageURL: null,
-  },
+    correctAnswer: "A guide that tells classes what methods to use",
+    imageURL: null
+  }
 
 ];
