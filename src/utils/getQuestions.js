@@ -18,6 +18,15 @@ export const getQuestions = (selectedQuiz, quizzes) => {
             return quizzes.mysql6;
         case 'mysql9':
             return quizzes.mysql7;
+        case 'mysql10':
+            return quizzes.mysql10;
+        case 'mysql11':
+            return quizzes.mysql11;
+        case 'mysql12':
+            return quizzes.mysql12;
+        case 'mysql13':
+            return quizzes.mysql13;
+
         default:
             return [];
     }

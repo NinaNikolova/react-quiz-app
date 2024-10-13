@@ -8,6 +8,13 @@ export default function Home() {
             <nav className="home-nav">
                 <ul className="nav-list">
                     <li className="nav-item">
+                        <Link className="nav-link" to="/quiz3">
+
+                            <article className='changing-color'> <img src="/vite1.png" alt="uml" className="nav-icon" /> JavaOOP</article>
+
+                        </Link>
+                    </li>
+                    <li className="nav-item">
                         <Link className="nav-link" to="/quiz">
 
                             <article className='changing-color'> <img src="/vite.png" alt="uml" className="nav-icon" /> MySQL</article>

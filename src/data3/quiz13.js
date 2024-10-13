@@ -1,0 +1,123 @@
+export const mysql13 = [
+  {
+    index: 1,
+    question: "What does XML stand for?",
+    choices: [
+      "Extensible Markup Language",
+      "Extra Markup Language",
+      "Executable Markup Language",
+      "Extended Markup Language",
+    ],
+    correctAnswer: "Extensible Markup Language",
+    imageURL: null,
+  },
+  {
+    index: 2,
+    question: "Which of the following is a correct XML element structure?",
+    choices: [
+      "<element></element>",
+      "<element>",
+      "<element/>",
+      "All of the above",
+    ],
+    correctAnswer: "All of the above",
+    imageURL: null,
+  },
+  {
+    index: 3,
+    question: "What is the purpose of the XML declaration?",
+    choices: [
+      "To specify the XML version and encoding",
+      "To define the root element",
+      "To create comments",
+      "To indicate a namespace",
+    ],
+    correctAnswer: "To specify the XML version and encoding",
+    imageURL: null,
+  },
+  {
+    index: 4,
+    question: "Which of the following is used to define the structure of an XML document?",
+    choices: [
+      "XSLT",
+      "XML Schema",
+      "DTD",
+      "Both B and C",
+    ],
+    correctAnswer: "Both B and C",
+    imageURL: null,
+  },
+  {
+    index: 5,
+    question: "What does a DTD stand for in XML?",
+    choices: [
+      "Document Type Definition",
+      "Data Type Definition",
+      "Document Template Declaration",
+      "Data Type Declaration",
+    ],
+    correctAnswer: "Document Type Definition",
+    imageURL: null,
+  },
+  {
+    index: 6,
+    question: "Which of the following is NOT a valid XML data type?",
+    choices: [
+      "String",
+      "Integer",
+      "Boolean",
+      "DateTime",
+    ],
+    correctAnswer: "DateTime",
+    imageURL: null,
+  },
+  {
+    index: 7,
+    question: "How do you parse an XML document in Java?",
+    choices: [
+      "Using XMLParser class",
+      "Using DOM or SAX parser",
+      "Using JSON.parse()",
+      "Using String.split() method",
+    ],
+    correctAnswer: "Using DOM or SAX parser",
+    imageURL: null,
+  },
+  {
+    index: 8,
+    question: "Which XML technology is used for transforming XML documents into other formats?",
+    choices: [
+      "XML Schema",
+      "XSLT",
+      "DOM",
+      "SAX",
+    ],
+    correctAnswer: "XSLT",
+    imageURL: null,
+  },
+  {
+    index: 9,
+    question: "What is the main difference between DOM and SAX parsers?",
+    choices: [
+      "DOM loads the entire document into memory, SAX reads it sequentially",
+      "SAX is faster than DOM",
+      "DOM is event-driven, SAX is not",
+      "Both A and B",
+    ],
+    correctAnswer: "Both A and B",
+    imageURL: null,
+  },
+  {
+    index: 10,
+    question: "Which of the following tools can be used to validate an XML document against a DTD?",
+    choices: [
+      "XML Validator",
+      "XML Parser",
+      "XML Editor",
+      "All of the above",
+    ],
+    correctAnswer: "All of the above",
+    imageURL: null,
+  },
+
+];
