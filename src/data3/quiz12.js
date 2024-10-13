@@ -1,123 +1,124 @@
+// Design Patterns
 export const mysql12 = [
   {
     index: 1,
-    question: "What does XML stand for?",
+    question: "What is the primary purpose of design patterns?",
     choices: [
-      "Extensible Markup Language",
-      "Extra Markup Language",
-      "Executable Markup Language",
-      "Extended Markup Language",
+      "To provide specific solutions for every programming problem.",
+      "To offer general and reusable solutions to common problems in software design.",
+      "To replace the need for object-oriented programming.",
+      "To eliminate the need for code documentation."
     ],
-    correctAnswer: "Extensible Markup Language",
-    imageURL: null,
+    correctAnswer: "To offer general and reusable solutions to common problems in software design.",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which of the following is a correct XML element structure?",
+    question: "Which of the following is NOT a benefit of using design patterns?",
     choices: [
-      "<element></element>",
-      "<element>",
-      "<element/>",
-      "All of the above",
+      "They improve developer communication.",
+      "They allow for direct code reuse.",
+      "They help ease the transition to Object-Oriented technology.",
+      "They can speed up development."
     ],
-    correctAnswer: "All of the above",
-    imageURL: null,
+    correctAnswer: "They allow for direct code reuse.",
+    imageURL: null
   },
   {
     index: 3,
-    question: "What is the purpose of the XML declaration?",
+    question: "What type of design pattern focuses on object creation mechanisms?",
     choices: [
-      "To specify the XML version and encoding",
-      "To define the root element",
-      "To create comments",
-      "To indicate a namespace",
+      "Structural patterns",
+      "Behavioral patterns",
+      "Creational patterns",
+      "Functional patterns"
     ],
-    correctAnswer: "To specify the XML version and encoding",
-    imageURL: null,
+    correctAnswer: "Creational patterns",
+    imageURL: null
   },
   {
     index: 4,
-    question: "Which of the following is used to define the structure of an XML document?",
+    question: "What is a common drawback of design patterns?",
     choices: [
-      "XSLT",
-      "XML Schema",
-      "DTD",
-      "Both B and C",
+      "They can lead to pattern overload and overdesign.",
+      "They are too complex to understand.",
+      "They always guarantee bug-free code.",
+      "They require extensive documentation."
     ],
-    correctAnswer: "Both B and C",
-    imageURL: null,
+    correctAnswer: "They can lead to pattern overload and overdesign.",
+    imageURL: null
   },
   {
     index: 5,
-    question: "What does a DTD stand for in XML?",
+    question: "Which design pattern is intended to have only one instance of a class?",
     choices: [
-      "Document Type Definition",
-      "Data Type Definition",
-      "Document Template Declaration",
-      "Data Type Declaration",
+      "Builder Pattern",
+      "Façade Pattern",
+      "Singleton Pattern",
+      "Composite Pattern"
     ],
-    correctAnswer: "Document Type Definition",
-    imageURL: null,
+    correctAnswer: "Singleton Pattern",
+    imageURL: null
   },
   {
     index: 6,
-    question: "Which of the following is NOT a valid XML data type?",
+    question: "In the Builder Pattern, what is the main benefit?",
     choices: [
-      "String",
-      "Integer",
-      "Boolean",
-      "DateTime",
+      "It allows for creating complex objects step by step.",
+      "It automatically manages memory for created objects.",
+      "It ensures that only one object is created.",
+      "It hides the implementation details of objects."
     ],
-    correctAnswer: "DateTime",
-    imageURL: null,
+    correctAnswer: "It allows for creating complex objects step by step.",
+    imageURL: null
   },
   {
     index: 7,
-    question: "How do you parse an XML document in Java?",
+    question: "What does the Façade Pattern provide?",
     choices: [
-      "Using XMLParser class",
-      "Using DOM or SAX parser",
-      "Using JSON.parse()",
-      "Using String.split() method",
+      "A single interface to a complex subsystem.",
+      "A way to create new objects without exposing details.",
+      "A method for encapsulating behaviors of objects.",
+      "An alternative to the Singleton Pattern."
     ],
-    correctAnswer: "Using DOM or SAX parser",
-    imageURL: null,
+    correctAnswer: "A single interface to a complex subsystem.",
+    imageURL: null
   },
   {
     index: 8,
-    question: "Which XML technology is used for transforming XML documents into other formats?",
+    question: "What is the focus of behavioral design patterns?",
     choices: [
-      "XML Schema",
-      "XSLT",
-      "DOM",
-      "SAX",
+      "Object creation",
+      "Communication between objects and assigning responsibilities.",
+      "Object composition and structure.",
+      "Encapsulating object states."
     ],
-    correctAnswer: "XSLT",
-    imageURL: null,
+    correctAnswer: "Communication between objects and assigning responsibilities.",
+    imageURL: null
   },
   {
     index: 9,
-    question: "What is the main difference between DOM and SAX parsers?",
+    question: "What is the primary goal of the Command Pattern?",
     choices: [
-      "DOM loads the entire document into memory, SAX reads it sequentially",
-      "SAX is faster than DOM",
-      "DOM is event-driven, SAX is not",
-      "Both A and B",
+      "To create new object instances.",
+      "To encapsulate a request as an object.",
+      "To provide a unified interface to a set of interfaces.",
+      "To ensure that a class has only one instance."
     ],
-    correctAnswer: "Both A and B",
-    imageURL: null,
+    correctAnswer: "To encapsulate a request as an object.",
+    imageURL: null
   },
   {
     index: 10,
-    question: "Which of the following tools can be used to validate an XML document against a DTD?",
+    question: "What does the Template Pattern allow subclasses to do?",
     choices: [
-      "XML Validator",
-      "XML Parser",
-      "XML Editor",
-      "All of the above",
+      "Change the structure of an algorithm completely.",
+      "Define the skeleton of an algorithm while allowing redefinition of parts.",
+      "Hide implementation details from users.",
+      "Create instances of objects dynamically."
     ],
-    correctAnswer: "All of the above",
-    imageURL: null,
-  },
+    correctAnswer: "Define the skeleton of an algorithm while allowing redefinition of parts.",
+    imageURL: null
+  }
 
 ];

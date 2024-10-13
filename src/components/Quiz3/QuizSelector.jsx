@@ -12,9 +12,8 @@ export default function QuizSelector({ selectedQuiz, handleQuizChange }) {
                 <option value="mysql8">Exceptions and Error Handling</option>
                 <option value="mysql9">Debugging Techniques</option>
                 <option value="mysql10">Unit Testing</option>
-                <option value="mysql11">Debugging Techniques</option>
-                <option value="mysql12">Test Driven Development</option>
-                <option value="mysql13">Design Patterns</option>
+                <option value="mysql11">Test Driven Development</option>
+                <option value="mysql12">Design Patterns</option>
             </select>
         </div>
     )

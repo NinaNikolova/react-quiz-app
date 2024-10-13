@@ -1,123 +1,123 @@
+// test driven development
 export const mysql11 = [
   {
     index: 1,
-    question: "What does XML stand for?",
+    question: "What is the primary difference between the 'Code and Test' approach and Test-Driven Development (TDD)?",
     choices: [
-      "Extensible Markup Language",
-      "Extra Markup Language",
-      "Executable Markup Language",
-      "Extended Markup Language",
+      "TDD requires writing tests before coding.",
+      "The 'Code and Test' approach does not involve testing.",
+      "TDD allows for faster coding.",
+      "The 'Code and Test' approach is more effective."
     ],
-    correctAnswer: "Extensible Markup Language",
-    imageURL: null,
+    correctAnswer: "TDD requires writing tests before coding.",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which of the following is a correct XML element structure?",
+    question: "In the TDD cycle, what is the first step after picking a test?",
     choices: [
-      "<element></element>",
-      "<element>",
-      "<element/>",
-      "All of the above",
+      "Write code to pass the test.",
+      "Compile and fail.",
+      "Run the test and succeed.",
+      "Remove duplication."
     ],
-    correctAnswer: "All of the above",
-    imageURL: null,
+    correctAnswer: "Compile and fail.",
+    imageURL: null
   },
   {
     index: 3,
-    question: "What is the purpose of the XML declaration?",
+    question: "Why is writing tests before coding beneficial in TDD?",
     choices: [
-      "To specify the XML version and encoding",
-      "To define the root element",
-      "To create comments",
-      "To indicate a namespace",
+      "It allows for more code to be written.",
+      "It helps to find design issues early.",
+      "It eliminates the need for tests altogether.",
+      "It speeds up the debugging process."
     ],
-    correctAnswer: "To specify the XML version and encoding",
-    imageURL: null,
+    correctAnswer: "It helps to find design issues early.",
+    imageURL: null
   },
   {
     index: 4,
-    question: "Which of the following is used to define the structure of an XML document?",
+    question: "What is a key advantage of TDD over traditional coding approaches?",
     choices: [
-      "XSLT",
-      "XML Schema",
-      "DTD",
-      "Both B and C",
+      "It reduces the overall coding time.",
+      "It guarantees bug-free code.",
+      "It helps manage complexity more easily.",
+      "It focuses solely on code efficiency."
     ],
-    correctAnswer: "Both B and C",
-    imageURL: null,
+    correctAnswer: "It helps manage complexity more easily.",
+    imageURL: null
   },
   {
     index: 5,
-    question: "What does a DTD stand for in XML?",
+    question: "What should you do after writing enough code to pass a test in TDD?",
     choices: [
-      "Document Type Definition",
-      "Data Type Definition",
-      "Document Template Declaration",
-      "Data Type Declaration",
+      "Write another test without removing duplication.",
+      "Remove duplication in the code.",
+      "Refactor the test code.",
+      "Write additional code for other functionalities."
     ],
-    correctAnswer: "Document Type Definition",
-    imageURL: null,
+    correctAnswer: "Remove duplication in the code.",
+    imageURL: null
   },
   {
     index: 6,
-    question: "Which of the following is NOT a valid XML data type?",
+    question: "What happens during the 'Run test and fail' step in the TDD process?",
     choices: [
-      "String",
-      "Integer",
-      "Boolean",
-      "DateTime",
+      "The code is verified as correct.",
+      "The test is expected to fail, indicating that the feature is not yet implemented.",
+      "The code is refactored.",
+      "New tests are created."
     ],
-    correctAnswer: "DateTime",
-    imageURL: null,
+    correctAnswer: "The test is expected to fail, indicating that the feature is not yet implemented.",
+    imageURL: null
   },
   {
     index: 7,
-    question: "How do you parse an XML document in Java?",
+    question: "Which of the following is NOT a reason to use Test-Driven Development?",
     choices: [
-      "Using XMLParser class",
-      "Using DOM or SAX parser",
-      "Using JSON.parse()",
-      "Using String.split() method",
+      "It encourages writing comprehensive tests.",
+      "It allows developers to avoid reworking code.",
+      "It ensures that all tests pass before coding begins.",
+      "It makes the code less prone to design flaws."
     ],
-    correctAnswer: "Using DOM or SAX parser",
-    imageURL: null,
+    correctAnswer: "It ensures that all tests pass before coding begins.",
+    imageURL: null
   },
   {
     index: 8,
-    question: "Which XML technology is used for transforming XML documents into other formats?",
+    question: "What is one of the main focuses of writing code to satisfy a test in TDD?",
     choices: [
-      "XML Schema",
-      "XSLT",
-      "DOM",
-      "SAX",
+      "Writing code efficiently.",
+      "Focusing on the functionality to meet the test criteria.",
+      "Writing complex code.",
+      "Reducing the number of tests."
     ],
-    correctAnswer: "XSLT",
-    imageURL: null,
+    correctAnswer: "Focusing on the functionality to meet the test criteria.",
+    imageURL: null
   },
   {
     index: 9,
-    question: "What is the main difference between DOM and SAX parsers?",
+    question: "In the TDD approach, what does the 'Create a test list' step involve?",
     choices: [
-      "DOM loads the entire document into memory, SAX reads it sequentially",
-      "SAX is faster than DOM",
-      "DOM is event-driven, SAX is not",
-      "Both A and B",
+      "Compiling all existing tests.",
+      "Identifying and writing tests that need to be created.",
+      "Running all tests to check for failures.",
+      "Removing old tests that are no longer relevant."
     ],
-    correctAnswer: "Both A and B",
-    imageURL: null,
+    correctAnswer: "Identifying and writing tests that need to be created.",
+    imageURL: null
   },
   {
     index: 10,
-    question: "Which of the following tools can be used to validate an XML document against a DTD?",
+    question: "How does TDD contribute to error reduction during development?",
     choices: [
-      "XML Validator",
-      "XML Parser",
-      "XML Editor",
-      "All of the above",
+      "It eliminates the need for testing.",
+      "It provides a structured approach to coding and testing.",
+      "It guarantees that code is error-free.",
+      "It allows developers to skip testing phases."
     ],
-    correctAnswer: "All of the above",
-    imageURL: null,
-  },
-
+    correctAnswer: "It provides a structured approach to coding and testing.",
+    imageURL: null
+  }
 ];
