@@ -1,124 +1,124 @@
 export const mysql2 = [
+
   {
     index: 1,
-    question: "What does ORM stand for in the context of databases?",
+    question: "What is Encapsulation in Object-Oriented Programming?",
     choices: [
-      "Object-Relational Model",
-      "Object-Relational Mapping",
-      "Object-Relational Management",
-      "Object-Relational Module",
+      "The process of wrapping code and data together into a single unit",
+      "The ability to inherit functionality from one class to another",
+      "The use of interfaces to hide implementation details",
+      "The process of writing modular code"
     ],
-    correctAnswer: "Object-Relational Mapping",
-    imageURL: null,
+    correctAnswer: "The process of wrapping code and data together into a single unit",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which of the following is a benefit of using ORM?",
+    question: "Which of the following is a benefit of Encapsulation?",
     choices: [
-      "Direct SQL manipulation",
-      "Improved database performance",
-      "Increased productivity and maintainability",
-      "Less code compared to raw SQL",
+      "Allows structural changes to remain local",
+      "Allows dynamic method dispatch",
+      "Encourages the use of mutable objects",
+      "Reduces inheritance complexity"
     ],
-    correctAnswer: "Increased productivity and maintainability",
-    imageURL: null,
+    correctAnswer: "Allows structural changes to remain local",
+    imageURL: null
   },
   {
     index: 3,
-    question: "What is the primary role of an ORM framework?",
+    question: "Which access modifier allows access only within the declared class itself?",
     choices: [
-      "Manage database connections",
-      "Map database tables to objects",
-      "Execute raw SQL queries",
-      "Generate database schemas",
+      "Public",
+      "Protected",
+      "Private",
+      "Default"
     ],
-    correctAnswer: "Map database tables to objects",
-    imageURL: null,
+    correctAnswer: "Private",
+    imageURL: null
   },
   {
     index: 4,
-    question: "Which of the following is a popular ORM framework in Java?",
+    question: "What does the 'this' keyword refer to in Java?",
     choices: [
-      "Hibernate",
-      "Spring JDBC",
-      "Java Server Faces (JSF)",
-      "Java Persistence API (JPA)",
+      "A reference to the superclass",
+      "A reference to the current object",
+      "A static reference to a class variable",
+      "A reference to an external class"
     ],
-    correctAnswer: "Hibernate",
-    imageURL: null,
+    correctAnswer: "A reference to the current object",
+    imageURL: null
   },
   {
     index: 5,
-    question: "What is lazy loading in the context of ORM?",
+    question: "How can a private field be accessed in an encapsulated class?",
     choices: [
-      "Loading all data at once",
-      "Loading data only when it is needed",
-      "Eagerly fetching all associated data",
-      "Caching data for performance",
+      "By using getter and setter methods",
+      "By making the field public",
+      "By using a static method",
+      "By directly accessing the field from a subclass"
     ],
-    correctAnswer: "Loading data only when it is needed",
-    imageURL: null,
+    correctAnswer: "By using getter and setter methods",
+    imageURL: null
   },
   {
     index: 6,
-    question: "In ORM, what does the term 'entity' refer to?",
+    question: "Which of the following access modifiers allows access to subclasses, but not nonrelated classes?",
     choices: [
-      "A table in a database",
-      "A row in a table",
-      "A class representing a database table",
-      "A SQL query",
+      "Private",
+      "Protected",
+      "Public",
+      "Default"
     ],
-    correctAnswer: "A class representing a database table",
-    imageURL: null,
+    correctAnswer: "Protected",
+    imageURL: null
   },
   {
     index: 7,
-    question: "Which of the following is a common feature of ORM frameworks?",
+    question: "What happens if an attempt is made to modify a final variable?",
     choices: [
-      "Automatic schema migration",
-      "Manual data mapping",
-      "SQL code generation",
-      "Support for multiple database engines",
+      "The program will compile and run successfully",
+      "A compile-time error will occur",
+      "The final variable will be reassigned",
+      "The final variable will be treated as a static variable"
     ],
-    correctAnswer: "Support for multiple database engines",
-    imageURL: null,
+    correctAnswer: "A compile-time error will occur",
+    imageURL: null
   },
   {
     index: 8,
-    question: "What is the purpose of the EntityManager in JPA?",
+    question: "Which of the following statements about mutable and immutable objects is correct?",
     choices: [
-      "To manage database connections",
-      "To create and manage entities",
-      "To execute raw SQL queries",
-      "To handle transactions",
+      "Immutable objects cannot have their contents changed",
+      "Mutable objects cannot be altered once created",
+      "Immutable objects are more flexible than mutable objects",
+      "Mutable objects are typically used in functional programming"
     ],
-    correctAnswer: "To create and manage entities",
-    imageURL: null,
+    correctAnswer: "Immutable objects cannot have their contents changed",
+    imageURL: null
   },
   {
     index: 9,
-    question: "What does the term 'mapping' refer to in ORM?",
+    question: "What is the main purpose of the 'final' keyword in Java?",
     choices: [
-      "The process of converting objects to database records",
-      "The process of writing SQL queries",
-      "The process of connecting to a database",
-      "The process of caching data",
+      "To declare a class that cannot be extended",
+      "To allow dynamic inheritance",
+      "To allow access to private fields from other classes",
+      "To restrict method overloading"
     ],
-    correctAnswer: "The process of converting objects to database records",
-    imageURL: null,
+    correctAnswer: "To declare a class that cannot be extended",
+    imageURL: null
   },
   {
     index: 10,
-    question: "Which annotation is commonly used to define an entity in JPA?",
+    question: "Where should data validation typically occur in an encapsulated class?",
     choices: [
-      "@Table",
-      "@Entity",
-      "@Column",
-      "@Data",
+      "Inside the constructor",
+      "Inside the getter methods",
+      "Inside the setter methods",
+      "At the time of object instantiation"
     ],
-    correctAnswer: "@Entity",
-    imageURL: null,
-  },
-
+    correctAnswer: "Inside the setter methods",
+    imageURL: null
+  }
 
 ];

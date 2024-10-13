@@ -10,7 +10,7 @@ export default function Home() {
                     <li className="nav-item">
                         <Link className="nav-link" to="/quiz3">
 
-                            <article className='changing-color'> <img src="/vite1.png" alt="uml" className="nav-icon" /> JavaOOP</article>
+                            <article className='changing-color'> <img src="/vite1.png" alt="uml" className="nav-icon" /> Java OOP</article>
 
                         </Link>
                     </li>

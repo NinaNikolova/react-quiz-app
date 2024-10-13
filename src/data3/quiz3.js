@@ -1,125 +1,135 @@
 export const mysql3 = [
   {
     index: 1,
-    question: "What is Hibernate primarily used for?",
+    question: "What does the 'extends' keyword in Java signify?",
     choices: [
-      "Building web applications",
-      "Object-Relational Mapping (ORM)",
-      "Database design",
-      "Data visualization",
+      "Creates an entirely new class",
+      "Establishes a connection between classes for reuse",
+      "Finalizes a class to prevent further inheritance",
+      "Overrides methods in the base class"
     ],
-    correctAnswer: "Object-Relational Mapping (ORM)",
-    imageURL: null,
+    correctAnswer: "Establishes a connection between classes for reuse",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which of the following is a key feature of Hibernate?",
+    question: "Which is NOT a benefit of inheritance in Java?",
     choices: [
-      "Direct SQL execution",
-      "Automatic table creation",
-      "Built-in web server",
-      "Multithreading support",
+      "Code reuse between classes",
+      "Creating hierarchies of related classes",
+      "Ability to have multiple parents",
+      "Overriding methods to provide specific implementations"
     ],
-    correctAnswer: "Automatic table creation",
-    imageURL: null,
+    correctAnswer: "Ability to have multiple parents",
+    imageURL: null
   },
   {
     index: 3,
-    question: "What configuration file is commonly used to set up Hibernate?",
+    question: "In a class hierarchy, which class is at the topmost level in Java?",
     choices: [
-      "hibernate.cfg.xml",
-      "persistence.xml",
-      "application.properties",
-      "config.xml",
+      "Object",
+      "ArrayList",
+      "Person",
+      "Collection"
     ],
-    correctAnswer: "hibernate.cfg.xml",
-    imageURL: null,
+    correctAnswer: "Object",
+    imageURL: null
   },
   {
     index: 4,
-    question: "In Hibernate, what is a Session?",
+    question: "Which one of the following refers to extending classes in Java?",
     choices: [
-      "A connection to the database",
-      "An interface for CRUD operations",
-      "A transaction manager",
-      "A cache for entity data",
+      "Reducing the functionality of a base class",
+      "Enhancing a class with additional properties and methods",
+      "Creating multiple classes at once",
+      "Preventing inheritance from a class"
     ],
-    correctAnswer: "An interface for CRUD operations",
-    imageURL: null,
+    correctAnswer: "Enhancing a class with additional properties and methods",
+    imageURL: null
   },
   {
     index: 5,
-    question: "Which annotation is used to map a Java class to a database table in Hibernate?",
+    question: "How is multiple inheritance handled in Java?",
     choices: [
-      "@Table",
-      "@Entity",
-      "@Column",
-      "@PrimaryKey",
+      "Using the 'extends' keyword for multiple classes",
+      "Using interfaces to simulate multiple inheritance",
+      "Through composition only",
+      "Java does not support inheritance"
     ],
-    correctAnswer: "@Entity",
-    imageURL: null,
+    correctAnswer: "Using interfaces to simulate multiple inheritance",
+    imageURL: null
   },
   {
     index: 6,
-    question: "What is the purpose of the Hibernate Query Language (HQL)?",
+    question: "What is a Diamond Problem in Java inheritance?",
     choices: [
-      "To create database schemas",
-      "To perform object-oriented queries",
-      "To manage transactions",
-      "To execute native SQL statements",
+      "A situation where a subclass inherits conflicting implementations from multiple interfaces",
+      "A problem that occurs during compilation due to a missing superclass",
+      "A method that can only be accessed by the base class",
+      "A subclass hiding the methods of a base class"
     ],
-    correctAnswer: "To perform object-oriented queries",
-    imageURL: null,
+    correctAnswer: "A situation where a subclass inherits conflicting implementations from multiple interfaces",
+    imageURL: null
   },
   {
     index: 7,
-    question: "Which method is used to save an entity in Hibernate?",
+    question: "What does the 'super' keyword in Java allow you to do?",
     choices: [
-      "save()",
-      "insert()",
-      "persist()",
-      "create()",
+      "Directly access private fields of a superclass",
+      "Access methods and constructors from the parent class",
+      "Prevent method overriding",
+      "Create multiple instances of the base class"
     ],
-    correctAnswer: "save()",
-    imageURL: null,
+    correctAnswer: "Access methods and constructors from the parent class",
+    imageURL: null
   },
   {
     index: 8,
-    question: "What is the purpose of the SessionFactory in Hibernate?",
+    question: "What is the IS-A relationship in inheritance?",
     choices: [
-      "To manage database connections",
-      "To create Session instances",
-      "To configure Hibernate settings",
-      "To handle transactions",
+      "It defines a part-of relationship between classes",
+      "It indicates that one class is a subtype of another",
+      "It refers to multiple classes sharing the same base class",
+      "It allows access to protected members of other classes"
     ],
-    correctAnswer: "To create Session instances",
-    imageURL: null,
+    correctAnswer: "It indicates that one class is a subtype of another",
+    imageURL: null
   },
   {
     index: 9,
-    question: "Which of the following is a valid way to retrieve an entity in Hibernate?",
+    question: "What is Inheritance in Object-Oriented Programming?",
     choices: [
-      "get()",
-      "load()",
-      "find()",
-      "All of the above",
+      "The process by which one class takes on the properties of another",
+      "The ability to run multiple threads concurrently",
+      "A way to store different types of data in a single variable",
+      "A method used to organize data in a queue"
     ],
-    correctAnswer: "All of the above",
-    imageURL: null,
+    correctAnswer: "The process by which one class takes on the properties of another",
+    imageURL: null
   },
   {
     index: 10,
-    question: "What does the `@Transactional` annotation do in a Spring-Hibernate application?",
+    question: "Which keyword is used to implement inheritance in Java?",
     choices: [
-      "Starts a transaction",
-      "Ends a transaction",
-      "Defines a service method as transactional",
-      "All of the above",
+      "implements",
+      "inherits",
+      "extends",
+      "instanceof"
     ],
-    correctAnswer: "All of the above",
-    imageURL: null,
+    correctAnswer: "extends",
+    imageURL: null
   },
-
-
+  {
+    index: 11,
+    question: "Why is inheritance important in programming?",
+    choices: [
+      "It allows code to be reused across different classes",
+      "It makes debugging easier by removing methods",
+      "It restricts access to private fields",
+      "It allows for the use of multiple superclasses"
+    ],
+    correctAnswer: "It allows code to be reused across different classes",
+    imageURL: null
+  }
 
 ];
