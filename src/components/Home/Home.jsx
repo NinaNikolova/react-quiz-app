@@ -4,7 +4,7 @@ import './Home.module.css';
 export default function Home() {
     return (
         <div className="home-container">
-            <h1 className="home-title"><div>Welcome</div><span>to the JAVA DB Quiz App</span> </h1>
+            <h1 className="home-title"><div>Welcome</div><span>to the JAVA DB Quizes</span> </h1>
             <nav className="home-nav">
                 <ul className="nav-list">
                     <li className="nav-item">
