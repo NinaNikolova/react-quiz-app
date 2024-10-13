@@ -1,123 +1,197 @@
+// Reflection and Annotations
 export const mysql7 = [
   {
     index: 1,
-    question: "What is auto mapping in Spring Data?",
+    question: "What is Reflection in programming?",
     choices: [
-      "Automatically creating database tables from entities",
-      "Mapping Java objects to database entities without manual intervention",
-      "Automatically generating REST APIs from repositories",
-      "Mapping database records to DTOs",
+      "The ability to write more code",
+      "The programming technique that allows programs to examine and modify their structure and behavior at runtime",
+      "A method to improve performance",
+      "A way to avoid using classes"
     ],
-    correctAnswer: "Mapping Java objects to database entities without manual intervention",
-    imageURL: null,
+    correctAnswer: "The programming technique that allows programs to examine and modify their structure and behavior at runtime",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which annotation is used to specify a field mapping in Spring Data?",
+    question: "Which of the following is NOT a use case for Reflection?",
     choices: [
-      "@Column",
-      "@Mapping",
-      "@Entity",
-      "@Table",
+      "Analyzing code structure",
+      "Generating code dynamically",
+      "Optimizing code for better performance",
+      "Modifying existing classes at runtime"
     ],
-    correctAnswer: "@Column",
-    imageURL: null,
+    correctAnswer: "Optimizing code for better performance",
+    imageURL: null
   },
   {
     index: 3,
-    question: "What is the purpose of the `@Entity` annotation?",
+    question: "When should you avoid using Reflection?",
     choices: [
-      "To define a class as a JPA entity",
-      "To configure a database connection",
-      "To create a Spring service",
-      "To specify a repository interface",
+      "When you need dynamic behavior",
+      "When performance is a critical concern",
+      "When examining classes",
+      "When using annotations"
     ],
-    correctAnswer: "To define a class as a JPA entity",
-    imageURL: null,
+    correctAnswer: "When performance is a critical concern",
+    imageURL: null
   },
   {
     index: 4,
-    question: "How does Spring Data handle the mapping of collections in entities?",
+    question: "What is the primary purpose of the java.lang.Class object in Reflection?",
     choices: [
-      "Using XML configuration only",
-      "Through annotations like `@OneToMany` or `@ManyToMany`",
-      "By requiring manual mapping",
-      "Using a special `Map` class",
+      "To create new objects",
+      "To obtain information about classes at runtime",
+      "To compile Java code",
+      "To handle exceptions"
     ],
-    correctAnswer: "Through annotations like `@OneToMany` or `@ManyToMany`",
-    imageURL: null,
+    correctAnswer: "To obtain information about classes at runtime",
+    imageURL: null
   },
   {
     index: 5,
-    question: "Which interface provides a convenient way to access entity properties in Spring Data?",
+    question: "What can you do with the Reflection API?",
     choices: [
-      "JpaRepository",
-      "EntityManager",
-      "CriteriaBuilder",
-      "SessionFactory",
+      "Obtain class names",
+      "Access private fields",
+      "Call methods without knowing their names at compile time",
+      "All of the above"
     ],
-    correctAnswer: "JpaRepository",
-    imageURL: null,
+    correctAnswer: "All of the above",
+    imageURL: null
   },
   {
     index: 6,
-    question: "What happens when an entity is updated in Spring Data?",
+    question: "What does the getDeclaredMethods() method return?",
     choices: [
-      "The entity is deleted",
-      "The changes are automatically persisted",
-      "A new entity is created",
-      "The entity is ignored",
+      "Only public methods of a class",
+      "All methods of a class, including private and protected ones",
+      "Only static methods",
+      "Methods that have parameters"
     ],
-    correctAnswer: "The changes are automatically persisted",
-    imageURL: null,
+    correctAnswer: "All methods of a class, including private and protected ones",
+    imageURL: null
   },
   {
     index: 7,
-    question: "How can you prevent a field from being persisted in Spring Data?",
+    question: "Which of the following is a built-in annotation in Java?",
     choices: [
-      "Using `@Transient` annotation",
-      "Using `@Ignore` annotation",
-      "Using `@Column(nullable = false)`",
-      "Using `@NotMapped` annotation",
+      "@MyAnnotation",
+      "@Override",
+      "@Reflection",
+      "@Field"
     ],
-    correctAnswer: "Using `@Transient` annotation",
-    imageURL: null,
+    correctAnswer: "@Override",
+    imageURL: null
   },
   {
     index: 8,
-    question: "Which Spring Data feature allows you to map complex types to simple types?",
+    question: "What is the purpose of the @Retention meta-annotation?",
     choices: [
-      "Custom Converters",
-      "Mapping Strategies",
-      "DTO Mapping",
-      "Entity Relations",
+      "To specify where the annotation can be applied",
+      "To define the types of elements an annotation can contain",
+      "To indicate how long an annotation is retained",
+      "To describe the code elements"
     ],
-    correctAnswer: "Custom Converters",
-    imageURL: null,
+    correctAnswer: "To indicate how long an annotation is retained",
+    imageURL: null
   },
   {
     index: 9,
-    question: "What is the role of the `@Table` annotation in an entity class?",
+    question: "What is the output of the following code snippet? @Deprecated public void myMethod() { System.out.println(\"Deprecated method\"); }",
     choices: [
-      "To define the database table name",
-      "To specify the primary key",
-      "To map relationships",
-      "To configure entity caching",
+      "No output",
+      "Warning about the use of a deprecated method",
+      "\"Deprecated method\"",
+      "Compilation error"
     ],
-    correctAnswer: "To define the database table name",
-    imageURL: null,
+    correctAnswer: "Warning about the use of a deprecated method",
+    imageURL: null
   },
   {
     index: 10,
-    question: "How do you automatically map JSON data to a Java object in Spring Data?",
+    question: "How do you create an annotation in Java?",
     choices: [
-      "Using `@JsonMapping` annotation",
-      "Using `ObjectMapper` from Jackson",
-      "Using `@RequestBody` in controller methods",
-      "Using `@JsonProperty` annotations",
+      "public class MyAnnotation {}",
+      "public @interface MyAnnotation {}",
+      "@MyAnnotation public class Example {}",
+      "public annotation MyAnnotation {}"
     ],
-    correctAnswer: "Using `@RequestBody` in controller methods",
-    imageURL: null,
+    correctAnswer: "public @interface MyAnnotation {}",
+    imageURL: null
   },
+  {
+    index: 11,
+    question: "What is an annotation in Java?",
+    choices: [
+      "A class that holds data",
+      "A feature that allows adding metadata to Java code",
+      "A method for code optimization",
+      "A type of loop"
+    ],
+    correctAnswer: "A feature that allows adding metadata to Java code",
+    imageURL: null
+  },
+  {
+    index: 12,
+    question: "What is the primary purpose of annotations in Java?",
+    choices: [
+      "To speed up code execution",
+      "To provide information for the compiler and runtime about the code structure",
+      "To replace XML configuration files",
+      "To enhance the performance of methods"
+    ],
+    correctAnswer: "To provide information for the compiler and runtime about the code structure",
+    imageURL: null
+  },
+  {
+    index: 13,
+    question: "What is the main use of annotations in Java /with simple words /?",
+    choices: [
+      "To improve code speed",
+      "To give extra information about the code",
+      "To replace configuration files",
+      "To make methods faster"
+    ],
+    correctAnswer: "To give extra information about the code",
+    imageURL: null
+  },
+  {
+    index: 14,
+    question: "What is metadata in Java?",
+    choices: [
+      "Data about data that describes the properties of classes and methods",
+      "Data that is only used for debugging purposes",
+      "Data that is always stored in a separate database",
+      "Data that cannot be modified at runtime"
+    ],
+    correctAnswer: "Data about data that describes the properties of classes and methods",
+    imageURL: null
+  },
+  {
+    index: 15,
+    question: "What is the connection between metadata and annotations in Java?",
+    choices: [
+      "Annotations provide metadata about the code elements they are applied to",
+      "Annotations are used only for performance optimization",
+      "Metadata can exist without annotations",
+      "Annotations replace the need for metadata"
+    ],
+    correctAnswer: "Annotations provide metadata about the code elements they are applied to",
+    imageURL: null
+  },
+  {
+    index: 16,
+    question: "How are reflection and annotations connected in Java?",
+    choices: [
+      "Reflection helps create annotations.",
+      "You can't use annotations with reflection.",
+      "Reflection lets you check and use annotations while the program is running.",
+      "Annotations are only for static methods."
+    ],
+    correctAnswer: "Reflection lets you check and use annotations while the program is running.",
+    imageURL: null
+  }
+
 
 ];
