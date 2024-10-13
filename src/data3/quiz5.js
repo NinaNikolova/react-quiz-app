@@ -1,123 +1,88 @@
+// Polymorphism
 export const mysql5 = [
   {
     index: 1,
-    question: "What is the primary purpose of Spring Data?",
+    question: "What is polymorphism in Object-Oriented Programming?",
     choices: [
-      "To create web applications",
-      "To simplify data access and persistence",
-      "To manage transactions",
-      "To provide an ORM framework",
+      "The ability of an object to take on many forms",
+      "Combining multiple classes into one",
+      "Creating multiple instances of a class",
+      "The process of hiding data"
     ],
-    correctAnswer: "To simplify data access and persistence",
-    imageURL: null,
+    correctAnswer: "The ability of an object to take on many forms",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which of the following modules is part of Spring Data?",
+    question: "What are the two main types of polymorphism?",
     choices: [
-      "Spring Data JPA",
-      "Spring Data MVC",
-      "Spring Data REST",
-      "Spring Data Security",
+      "Compile-time and Runtime",
+      "Static and Dynamic",
+      "Abstract and Concrete",
+      "Override and Overload"
     ],
-    correctAnswer: "Spring Data JPA",
-    imageURL: null,
+    correctAnswer: "Compile-time and Runtime",
+    imageURL: null
   },
   {
     index: 3,
-    question: "What is a Repository in Spring Data?",
+    question: "What is method overriding?",
     choices: [
-      "A service for database connections",
-      "An interface for CRUD operations",
-      "A configuration class for Hibernate",
-      "A data source",
+      "Creating a method with the same name but different parameters",
+      "Creating a method in a subclass that has the same name and parameters as a method in the parent class",
+      "Changing the return type of a method",
+      "Creating a method that cannot be changed"
     ],
-    correctAnswer: "An interface for CRUD operations",
-    imageURL: null,
+    correctAnswer: "Creating a method in a subclass that has the same name and parameters as a method in the parent class",
+    imageURL: null
   },
   {
     index: 4,
-    question: "Which annotation is used to indicate a Spring Data repository interface?",
+    question: "What is method overloading?",
     choices: [
-      "@Repository",
-      "@Service",
-      "@Component",
-      "@Entity",
+      "Creating a method that must be overridden",
+      "Changing the visibility of a method",
+      "Defining a method inside an interface",
+      "Creating multiple methods with the same name but different parameters",
     ],
-    correctAnswer: "@Repository",
-    imageURL: null,
+    correctAnswer: "Creating multiple methods with the same name but different parameters",
+    imageURL: null
   },
   {
     index: 5,
-    question: "How does Spring Data JPA simplify the implementation of data access layers?",
+    question: "What is an abstract class?",
     choices: [
-      "By using SQL directly",
-      "By generating SQL queries from method names",
-      "By enforcing a strict schema",
-      "By eliminating the need for configuration",
+      "A class that cannot be instantiated and may contain abstract methods",
+      "A class that can be instantiated but has no methods",
+      "A class that can be used to create objects",
+      "A class that contains only static methods"
     ],
-    correctAnswer: "By generating SQL queries from method names",
-    imageURL: null,
+    correctAnswer: "A class that cannot be instantiated and may contain abstract methods",
+    imageURL: null
   },
   {
     index: 6,
-    question: "Which interface does Spring Data JPA provide for basic CRUD operations?",
+    question: "What is an abstract method?",
     choices: [
-      "JpaRepository",
-      "CrudRepository",
-      "Repository",
-      "EntityRepository",
+      "A method that cannot be overridden",
+      "A method that has a body but cannot be called",
+      "A method without a body that must be implemented in a subclass",
+      "A method that is only available in an interface"
     ],
-    correctAnswer: "JpaRepository",
-    imageURL: null,
+    correctAnswer: "A method without a body that must be implemented in a subclass",
+    imageURL: null
   },
   {
     index: 7,
-    question: "What is the role of the `@EnableJpaRepositories` annotation?",
+    question: "Which keyword is used to define an abstract class in Java?",
     choices: [
-      "To enable JPA repositories in the Spring application",
-      "To configure database connections",
-      "To create entity classes",
-      "To handle transactions",
+      "interface",
+      "abstract",
+      "class",
+      "public"
     ],
-    correctAnswer: "To enable JPA repositories in the Spring application",
-    imageURL: null,
-  },
-  {
-    index: 8,
-    question: "What type of queries can you create using Spring Data Query Methods?",
-    choices: [
-      "Dynamic SQL queries",
-      "JPQL queries",
-      "Both A and B",
-      "No queries are allowed",
-    ],
-    correctAnswer: "Both A and B",
-    imageURL: null,
-  },
-  {
-    index: 9,
-    question: "Which annotation is used to specify a custom query in Spring Data JPA?",
-    choices: [
-      "@Query",
-      "@Select",
-      "@CustomQuery",
-      "@NamedQuery",
-    ],
-    correctAnswer: "@Query",
-    imageURL: null,
-  },
-  {
-    index: 10,
-    question: "What is the benefit of using Spring Data REST?",
-    choices: [
-      "Automatic RESTful API creation from repositories",
-      "Improved database performance",
-      "Simplified entity relationships",
-      "Support for multiple database engines",
-    ],
-    correctAnswer: "Automatic RESTful API creation from repositories",
-    imageURL: null,
-  },
+    correctAnswer: "abstract",
+    imageURL: null
+  }
 
 ];
