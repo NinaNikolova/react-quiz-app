@@ -1,123 +1,124 @@
+// Exception Handling
+
 export const mysql8 = [
   {
     index: 1,
-    question: "What does JSON stand for?",
+    question: "What are exceptions in Java?",
     choices: [
-      "JavaScript Object Notation",
-      "Java Standard Object Notation",
-      "JavaScript Online Notation",
-      "Java Structured Object Notation",
+      "Notifications about successful operations",
+      "Notifications about failed operations",
+      "Messages from the compiler",
+      "Instructions for coding"
     ],
-    correctAnswer: "JavaScript Object Notation",
-    imageURL: null,
+    correctAnswer: "Notifications about failed operations",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which of the following is a valid JSON format?",
+    question: "What class is the base for all Java exceptions?",
     choices: [
-      "{name: 'John', age: 30}",
-      '{"name": "John", "age": 30}',
-      "[name: 'John', age: 30]",
-      "['name': 'John', 'age': 30]",
+      "Throwable",
+      "Exception",
+      "Error",
+      "RuntimeException"
     ],
-    correctAnswer: '{"name": "John", "age": 30}',
-    imageURL: null,
+    correctAnswer: "Throwable",
+    imageURL: null
   },
   {
     index: 3,
-    question: "What is the main use of JSON?",
+    question: "What type of exception must be handled by the programmer?",
     choices: [
-      "Data storage",
-      "Data interchange between a server and a web application",
-      "Database management",
-      "Data encryption",
+      "Unchecked Exception",
+      "Checked Exception",
+      "Runtime Exception",
+      "System Exception"
     ],
-    correctAnswer: "Data interchange between a server and a web application",
-    imageURL: null,
+    correctAnswer: "Checked Exception",
+    imageURL: null
   },
   {
     index: 4,
-    question: "Which of the following is NOT a valid JSON data type?",
+    question: "What does the try-catch block do?",
     choices: [
-      "String",
-      "Number",
-      "Object",
-      "Function",
+      "Catches all types of errors.",
+      "Always runs the code in the catch block.",
+      "Prevents the program from crashing.",
+      "Handles exceptions that occur during execution.",
     ],
-    correctAnswer: "Function",
-    imageURL: null,
+    correctAnswer: "Handles exceptions that occur during execution.",
+    imageURL: null
   },
   {
     index: 5,
-    question: "How do you parse a JSON string in JavaScript?",
+    question: "What keyword is used to signal an error in Java?",
     choices: [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.decode()",
-      "JSON.load()",
+      "catch",
+      "finally",
+      "throw",
+      "raise"
     ],
-    correctAnswer: "JSON.parse()",
-    imageURL: null,
+    correctAnswer: "throw",
+    imageURL: null
   },
   {
     index: 6,
-    question: "Which method converts a JavaScript object into a JSON string?",
+    question: "What is the purpose of a finally block?",
     choices: [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toString()",
-      "JSON.convert()",
+      "To run code only when an exception occurs.",
+      "To handle specific exceptions.",
+      "To run code no matter if an exception occurs or not.",
+      "To ignore exceptions."
     ],
-    correctAnswer: "JSON.stringify()",
-    imageURL: null,
+    correctAnswer: "To run code no matter if an exception occurs or not.",
+    imageURL: null
   },
   {
     index: 7,
-    question: "In JSON, what character is used to denote an array?",
+    question: "How can you create your own exception in Java?",
     choices: [
-      "{}",
-      "[]",
-      "()",
-      "<>",
+      "By using the Exception class.",
+      "By using the Throwable class.",
+      "By using built-in exceptions.",
+      "By modifying existing exceptions."
     ],
-    correctAnswer: "[]",
-    imageURL: null,
+    correctAnswer: "By using the Exception class.",
+    imageURL: null
   },
   {
     index: 8,
-    question: "What is the purpose of the `JSON Schema`?",
+    question: "What should you do to handle exceptions properly?",
     choices: [
-      "To define the structure of JSON data",
-      "To encrypt JSON data",
-      "To compress JSON data",
-      "To convert JSON to XML",
+      "Catch all exceptions in one block.",
+      "Use specific catch blocks for different exceptions.",
+      "Ignore all exceptions.",
+      "Always rethrow exceptions."
     ],
-    correctAnswer: "To define the structure of JSON data",
-    imageURL: null,
+    correctAnswer: "Use specific catch blocks for different exceptions.",
+    imageURL: null
   },
   {
     index: 9,
-    question: "Which library can be used in Java to process JSON?",
+    question: "What happens if an exception is not caught?",
     choices: [
-      "Jackson",
-      "Spring",
-      "Hibernate",
-      "JDBC",
+      "The program continues normally.",
+      "The exception is ignored.",
+      "The program crashes and shows an error message.",
+      "The exception is logged."
     ],
-    correctAnswer: "Jackson",
-    imageURL: null,
+    correctAnswer: "The program crashes and shows an error message.",
+    imageURL: null
   },
   {
     index: 10,
-    question: "What is the output of the following JavaScript code: `console.log(JSON.stringify({ name: 'Alice', age: 25 }));`?",
+    question: "What type of exception occurs at runtime?",
     choices: [
-      "{ name: 'Alice', age: 25 }",
-      "{\"name\":\"Alice\",\"age\":25}",
-      "['Alice', 25]",
-      "[name: 'Alice', age: 25]",
+      "Checked Exception",
+      "Unchecked Exception",
+      "Compile-time Exception",
+      "System Exception"
     ],
-    correctAnswer: "{\"name\":\"Alice\",\"age\":25}",
-    imageURL: null,
-  },
-
+    correctAnswer: "Unchecked Exception",
+    imageURL: null
+  }
 ];

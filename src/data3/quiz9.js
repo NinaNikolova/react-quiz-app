@@ -1,123 +1,102 @@
+// Debugging Techniques
 export const mysql9 = [
   {
     index: 1,
-    question: "What does XML stand for?",
+    question: "What is debugging?",
     choices: [
-      "Extensible Markup Language",
-      "Extra Markup Language",
-      "Executable Markup Language",
-      "Extended Markup Language",
+      "The process of creating new code",
+      "The process of locating and fixing or bypassing bugs in a computer program code",
+      "The process of testing software before release",
+      "The process of writing documentation"
     ],
-    correctAnswer: "Extensible Markup Language",
-    imageURL: null,
+    correctAnswer: "The process of locating and fixing or bypassing bugs in a computer program code",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which of the following is a correct XML element structure?",
+    question: "Which of the following statements describes the importance of debugging?",
     choices: [
-      "<element></element>",
-      "<element>",
-      "<element/>",
-      "All of the above",
+      "Debugging can be performed only on new code.",
+      "Debugging helps in diagnosing and correcting root causes of detected errors.",
+      "Perfect code is achievable with no debugging needed.",
+      "Debugging tools are unnecessary in modern software development."
     ],
-    correctAnswer: "All of the above",
-    imageURL: null,
+    correctAnswer: "Debugging helps in diagnosing and correcting root causes of detected errors.",
+    imageURL: null
   },
   {
     index: 3,
-    question: "What is the purpose of the XML declaration?",
+    question: "What is a feature of the IntelliJ IDEA debugger?",
     choices: [
-      "To specify the XML version and encoding",
-      "To define the root element",
-      "To create comments",
-      "To indicate a namespace",
+      "It cannot visualize program flow.",
+      "It allows adding breakpoints and watching variables.",
+      "It does not support multithreaded program debugging.",
+      "It requires an active internet connection to function."
     ],
-    correctAnswer: "To specify the XML version and encoding",
-    imageURL: null,
+    correctAnswer: "It allows adding breakpoints and watching variables.",
+    imageURL: null
   },
   {
     index: 4,
-    question: "Which of the following is used to define the structure of an XML document?",
+    question: "Which shortcut is used to start debugging a process in IntelliJ IDEA?",
     choices: [
-      "XSLT",
-      "XML Schema",
-      "DTD",
-      "Both B and C",
+      "Ctrl + Shift + D",
+      "Ctrl + Alt + F5",
+      "Shift + F9",
+      "Alt + F8"
     ],
-    correctAnswer: "Both B and C",
-    imageURL: null,
+    correctAnswer: "Ctrl + Alt + F5",
+    imageURL: null
   },
   {
     index: 5,
-    question: "What does a DTD stand for in XML?",
+    question: "What is the primary purpose of breakpoints in debugging?",
     choices: [
-      "Document Type Definition",
-      "Data Type Definition",
-      "Document Template Declaration",
-      "Data Type Declaration",
+      "To compile code faster",
+      "To stop execution based on certain criteria",
+      "To improve code readability",
+      "To generate random outputs"
     ],
-    correctAnswer: "Document Type Definition",
-    imageURL: null,
+    correctAnswer: "To stop execution based on certain criteria",
+    imageURL: null
   },
   {
     index: 6,
-    question: "Which of the following is NOT a valid XML data type?",
+    question: "How can you set a breakpoint in IntelliJ IDEA?",
     choices: [
-      "String",
-      "Integer",
-      "Boolean",
-      "DateTime",
+      "By using the shortcut Ctrl + Shift + F8",
+      "By using the shortcut Ctrl + F8 or clicking on the leftmost side of the source code window",
+      "By using the shortcut Shift + F9",
+      "By right-clicking on the code and selecting 'Set Breakpoint'"
     ],
-    correctAnswer: "DateTime",
-    imageURL: null,
+    correctAnswer: "By using the shortcut Ctrl + F8 or clicking on the leftmost side of the source code window",
+    imageURL: null
   },
   {
     index: 7,
-    question: "How do you parse an XML document in Java?",
+    question: "Why is data inspection important in debugging?",
     choices: [
-      "Using XMLParser class",
-      "Using DOM or SAX parser",
-      "Using JSON.parse()",
-      "Using String.split() method",
+      "It helps in identifying the programming language used.",
+      "It allows the programmer to see the local variables, memory state, and code flow.",
+      "It guarantees that there are no bugs in the code.",
+      "It provides automatic solutions for errors."
     ],
-    correctAnswer: "Using DOM or SAX parser",
-    imageURL: null,
+    correctAnswer: "It allows the programmer to see the local variables, memory state, and code flow.",
+    imageURL: null
   },
+
   {
     index: 8,
-    question: "Which XML technology is used for transforming XML documents into other formats?",
+    question: "What is the first step in finding a defect?",
     choices: [
-      "XML Schema",
-      "XSLT",
-      "DOM",
-      "SAX",
+      "Fix the defect immediately",
+      "Gather data about the defect",
+      "Stabilize the error",
+      "Analyze the code"
     ],
-    correctAnswer: "XSLT",
-    imageURL: null,
+    correctAnswer: "Stabilize the error",
+    imageURL: null
   },
-  {
-    index: 9,
-    question: "What is the main difference between DOM and SAX parsers?",
-    choices: [
-      "DOM loads the entire document into memory, SAX reads it sequentially",
-      "SAX is faster than DOM",
-      "DOM is event-driven, SAX is not",
-      "Both A and B",
-    ],
-    correctAnswer: "Both A and B",
-    imageURL: null,
-  },
-  {
-    index: 10,
-    question: "Which of the following tools can be used to validate an XML document against a DTD?",
-    choices: [
-      "XML Validator",
-      "XML Parser",
-      "XML Editor",
-      "All of the above",
-    ],
-    correctAnswer: "All of the above",
-    imageURL: null,
-  },
+
 
 ];

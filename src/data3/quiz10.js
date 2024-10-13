@@ -1,123 +1,128 @@
+// Unit Testing
 export const mysql10 = [
   {
     index: 1,
-    question: "What does XML stand for?",
+    question: "What is the primary goal of unit testing?",
     choices: [
-      "Extensible Markup Language",
-      "Extra Markup Language",
-      "Executable Markup Language",
-      "Extended Markup Language",
+      "To verify the entire system functionality",
+      "To test individual components or modules in isolation",
+      "To perform integration testing",
+      "To document the code"
     ],
-    correctAnswer: "Extensible Markup Language",
-    imageURL: null,
+    correctAnswer: "To test individual components or modules in isolation",
+    imageURL: null
   },
   {
     index: 2,
-    question: "Which of the following is a correct XML element structure?",
+    question: "Which framework is most popular for unit testing in Java?",
     choices: [
-      "<element></element>",
-      "<element>",
-      "<element/>",
-      "All of the above",
+      "JUnit",
+      "TestNG",
+      "Mockito",
+      "Selenium"
     ],
-    correctAnswer: "All of the above",
-    imageURL: null,
+    correctAnswer: "JUnit",
+    imageURL: null
   },
   {
     index: 3,
-    question: "What is the purpose of the XML declaration?",
+    question: "What does the 3A Pattern in unit testing stand for?",
     choices: [
-      "To specify the XML version and encoding",
-      "To define the root element",
-      "To create comments",
-      "To indicate a namespace",
+      "Arrange, Act, Assert",
+      "Add, Apply, Analyze",
+      "All, Apply, Assert",
+      "Arrange, Apply, Analyze"
     ],
-    correctAnswer: "To specify the XML version and encoding",
-    imageURL: null,
+    correctAnswer: "Arrange, Act, Assert",
+    imageURL: null
   },
   {
     index: 4,
-    question: "Which of the following is used to define the structure of an XML document?",
+    question: "Which of the following statements reflects the 'Pesticide Paradox' in testing?",
     choices: [
-      "XSLT",
-      "XML Schema",
-      "DTD",
-      "Both B and C",
+      "Testing can prove the absence of defects.",
+      "Same tests repeated lose their effectiveness.",
+      "All tests should cover every possible input.",
+      "Unit tests are sufficient for all types of testing."
     ],
-    correctAnswer: "Both B and C",
-    imageURL: null,
+    correctAnswer: "Same tests repeated lose their effectiveness.",
+    imageURL: null
   },
   {
     index: 5,
-    question: "What does a DTD stand for in XML?",
+    question: "Which of the following is NOT one of the Seven Testing Principles?",
     choices: [
-      "Document Type Definition",
-      "Data Type Definition",
-      "Document Template Declaration",
-      "Data Type Declaration",
+      "Testing is context dependent",
+      "Testing can prove the absence of defects",
+      "Exhaustive testing is impossible",
+      "Defect clustering",
+      "Early testing is always preferred",
+      "Pesticide paradox",
+      "Testing shows presence of defects",
+      "Absence-of-errors fallacy"
     ],
-    correctAnswer: "Document Type Definition",
-    imageURL: null,
+    correctAnswer: "Testing can prove the absence of defects",
+    imageURL: null
   },
   {
     index: 6,
-    question: "Which of the following is NOT a valid XML data type?",
+    question: "What is the significance of Dependency Injection in unit testing?",
     choices: [
-      "String",
-      "Integer",
-      "Boolean",
-      "DateTime",
+      "It reduces the need for testing.",
+      "It makes classes testable by decoupling them.",
+      "It increases the complexity of the code.",
+      "It allows for exhaustive testing."
     ],
-    correctAnswer: "DateTime",
-    imageURL: null,
+    correctAnswer: "It makes classes testable by decoupling them.",
+    imageURL: null
   },
   {
     index: 7,
-    question: "How do you parse an XML document in Java?",
+    question: "What is a mock object used for in unit testing?",
     choices: [
-      "Using XMLParser class",
-      "Using DOM or SAX parser",
-      "Using JSON.parse()",
-      "Using String.split() method",
+      "To simulate real objects and control their behavior",
+      "To replace all dependencies in a project",
+      "To perform integration testing",
+      "To provide a user interface for testing"
     ],
-    correctAnswer: "Using DOM or SAX parser",
-    imageURL: null,
+    correctAnswer: "To simulate real objects and control their behavior",
+    imageURL: null
   },
   {
     index: 8,
-    question: "Which XML technology is used for transforming XML documents into other formats?",
+    question: "Which assertion method is preferred for checking equality in unit tests?",
     choices: [
-      "XML Schema",
-      "XSLT",
-      "DOM",
-      "SAX",
+      "assertTrue()",
+      "assertSame()",
+      "assertEquals()",
+      "assertNotNull()"
     ],
-    correctAnswer: "XSLT",
-    imageURL: null,
+    correctAnswer: "assertEquals()",
+    imageURL: null
   },
   {
     index: 9,
-    question: "What is the main difference between DOM and SAX parsers?",
+    question: "What should be included in a test method name for clarity?",
     choices: [
-      "DOM loads the entire document into memory, SAX reads it sequentially",
-      "SAX is faster than DOM",
-      "DOM is event-driven, SAX is not",
-      "Both A and B",
+      "Generic terms",
+      "Abbreviations",
+      "Business domain terminology",
+      "Random phrases"
     ],
-    correctAnswer: "Both A and B",
-    imageURL: null,
+    correctAnswer: "Business domain terminology",
+    imageURL: null
   },
   {
     index: 10,
-    question: "Which of the following tools can be used to validate an XML document against a DTD?",
+    question: "Why is early testing preferred according to the Seven Testing Principles?",
     choices: [
-      "XML Validator",
-      "XML Parser",
-      "XML Editor",
-      "All of the above",
+      "It increases testing complexity.",
+      "The later a bug is found, the more it costs to fix.",
+      "Early tests are always more effective.",
+      "It guarantees that all bugs will be found."
     ],
-    correctAnswer: "All of the above",
-    imageURL: null,
-  },
+    correctAnswer: "The later a bug is found, the more it costs to fix.",
+    imageURL: null
+  }
 
 ];
