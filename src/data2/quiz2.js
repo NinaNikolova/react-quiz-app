@@ -247,4 +247,28 @@ export const mysql2 = [
 		correctAnswer: "Yes",
 		imageURL: null,
 	},
+	{
+		index: 22,
+		question: "What does the `@Target(ElementType.FIELD)` annotation specify in Java Spring?",
+		choices: [
+			"The annotation can only be applied to methods",
+			"The annotation can only be applied to classes and interfaces",
+			"The annotation can only be applied to fields",
+			"The annotation can be applied to any code element",
+		],
+		correctAnswer: "The annotation can only be applied to fields",
+		imageURL: null,
+	},
+	{
+		index: 23,
+		question: "What is the purpose of `@Target(ElementType.TYPE)` in Java Spring?",
+		choices: [
+			"It restricts the annotation to be used on methods",
+			"It restricts the annotation to be used on types like classes or interfaces",
+			"It restricts the annotation to be used only on fields",
+			"It allows the annotation to be used on any part of the code",
+		],
+		correctAnswer: "It restricts the annotation to be used on types like classes or interfaces",
+		imageURL: null,
+	},
 ];
