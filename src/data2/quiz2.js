@@ -271,4 +271,28 @@ export const mysql2 = [
 		correctAnswer: "It restricts the annotation to be used on types like classes or interfaces",
 		imageURL: null,
 	},
+	{
+		index: 24,
+		question: "What does the `@Retention(RetentionPolicy.RUNTIME)` annotation specify in Java?",
+		choices: [
+			"The annotation will be retained only in the source code and discarded during compilation",
+			"The annotation will be retained in the compiled class files but not available at runtime",
+			"The annotation will be retained in the JVM and available for reflection at runtime",
+			"The annotation will only be retained for debugging purposes",
+		],
+		correctAnswer: "The annotation will be retained in the JVM and available for reflection at runtime",
+		imageURL: null,
+	},
+	{
+		index: 25,
+		question: "What does `@Retention(RetentionPolicy.RUNTIME)` mean in Java?",
+		choices: [
+			"The annotation is only kept in the source code",
+			"The annotation is kept in the compiled code but not available at runtime",
+			"The annotation is kept and available to use while the program is running",
+			"The annotation is only used for debugging",
+		],
+		correctAnswer: "The annotation is kept and available to use while the program is running",
+		imageURL: null,
+	},
 ];
