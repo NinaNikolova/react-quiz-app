@@ -86,7 +86,7 @@ export const mysql2 = [
 	},
 	{
 		index: 8,
-		question: "What is the purpose of the EntityManager in JPA?",
+		question: "What is the purpose of the EntityManager in JPA (Java Persistence API)?",
 		choices: [
 			"To manage database connections",
 			"To create and manage entities",
@@ -110,7 +110,7 @@ export const mysql2 = [
 	},
 	{
 		index: 10,
-		question: "Which annotation is commonly used to define an entity in JPA?",
+		question: "Which annotation is commonly used to define an entity in JPA ((Java Persistence API)?",
 		choices: [
 			"@Table",
 			"@Entity",
@@ -204,31 +204,6 @@ export const mysql2 = [
 	},
 	{
 		index: 18,
-		question: "Which of the following is NOT a typical functionality provided by ORM frameworks?",
-		choices: [
-			"Automatically generating SQL for operations like persist, update, delete, merge, createQuery and so on",
-			"Creating a database schema directly from an object model (Code First model)",
-			"Generating complex manual SQL queries for data operations",
-			"Building an object model from an existing database schema (DB First model)",
-		],
-		correctAnswer: "Generating complex manual SQL queries for data operations",
-		imageURL: null,
-	},
-	{
-		index: 19,
-		question: "Which of the following is NOT data operations with ORM?",
-		choices: [
-			"Save entity to DB - Student student = new Student('George', 'Brown'); session.save(student);",
-			"Retrieve data from DB - Student student = (Student) session.get(Student.class, 1);",
-			"Using HQL - List<Student> studentList = session.createQuery('FROM Student').toList();",
-			"Using SQL - String sql = 'SELECT * FROM Employee'; SQLQuery query = session.createSQLQuery(sql); query.addEntity(Employee.class); List<Employee> results = query.list();",
-			"SELECT * FROM employees"
-		],
-		correctAnswer: "SELECT * FROM employees",
-		imageURL: null,
-	},
-	{
-		index: 20,
 		question: "What is not ORM advantage?",
 		choices: [
 			"Productivity",
@@ -241,19 +216,19 @@ export const mysql2 = [
 		imageURL: null,
 	},
 	{
-		index: 20,
+		index: 19,
 		question: "What is not ORM disadvantage?",
 		choices: [
 			"Reduces flexibility",
 			"Reduced performance",
 			"Maintainability",
-			"Reduces flexibility",
+			"Lose understanding",
 		],
 		correctAnswer: "Maintainability",
 		imageURL: null,
 	},
 	{
-		index: 21,
+		index: 20,
 		question: "Object-Relational Mapping (ORM) allows manipulating databases using common classes and objects. The main difference, between JDBC and ORM, is complexity. Is this true?",
 		choices: [
 			"Yes",
