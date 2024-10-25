@@ -237,4 +237,14 @@ export const mysql2 = [
 		correctAnswer: "Yes",
 		imageURL: null,
 	},
+	{
+		index: 21,
+		question: "Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance. Is this statement correct?",
+		choices: [
+			"Yes",
+			"No",
+		],
+		correctAnswer: "Yes",
+		imageURL: null,
+	},
 ];
