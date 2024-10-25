@@ -54,10 +54,10 @@ export const mysql1 = [
     choices: [
       "To execute batch updates",
       "To compile SQL queries at runtime",
-      "To prevent SQL injection",
+      "To retrieve the result from DB and prevent SQL injection",
       "To manage transaction isolation",
     ],
-    correctAnswer: "To prevent SQL injection",
+    correctAnswer: "To retrieve the result from DB and prevent SQL injection",
     imageURL: null,
   },
   {
@@ -296,12 +296,12 @@ export const mysql1 = [
     index: 25,
     question: "What are the essential credentials needed for establishing a JDBC connection?",
     choices: [
-      "Username, password, and connection details like database name and port.",
+      "Username, password, and connection details like database name, host and port.",
       "Only the IP address of the server.",
       "Just the database schema name.",
       "None of the above."
     ],
-    correctAnswer: "Username, password, and connection details like database name and port.",
+    correctAnswer: "Username, password, and connection details like database name, host and port.",
     imageURL: null
   },
   {
@@ -350,6 +350,54 @@ export const mysql1 = [
       "By using the getRows() method to retrieve all rows at once and then accessing the data."
     ],
     correctAnswer: "By using the next() method to move the cursor to the next row and calling methods like getString() or getInt() to retrieve data.",
+    imageURL: null
+  },
+  {
+    index: 30,
+    question: "Which of the following is true about the differences between Statement, PreparedStatement, and CallableStatement in JDBC?",
+    choices: [
+      "Statement is used for general-purpose access to your database and static SQL, while PreparedStatement allows for SQL statements with parameters, and CallableStatement is used to call stored procedures.",
+      "PreparedStatement is used for general-purpose database access, while Statement accepts parameters and CallableStatement is used only for inserting data.",
+      "CallableStatement is for executing static SQL queries, Statement is for dynamic SQL with parameters, and PreparedStatement is for executing stored procedures.",
+      "Statement and PreparedStatement are used for stored procedures, while CallableStatement is for static SQL queries."
+    ],
+    correctAnswer: "Statement is used for general-purpose access to your database and static SQL, while PreparedStatement allows for SQL statements with parameters, and CallableStatement is used to call stored procedures.",
+    imageURL: null
+  },
+  {
+    index: 31,
+    question: "What is SQL Injection and how can it be prevented in JDBC?",
+    choices: [
+      "SQL Injection is the placement of malicious code in SQL statements, often via user input. It can be prevented by using PreparedStatement to safely include parameters in SQL queries.",
+      "SQL Injection is a method to optimize SQL queries. It is prevented by directly embedding user input into SQL statements.",
+      "SQL Injection is the process of encrypting SQL queries to enhance security. It can be avoided by using CallableStatement.",
+      "SQL Injection allows multiple SQL queries to run in parallel, improving performance. It can be prevented by using Statement for database access."
+    ],
+    correctAnswer: "SQL Injection is the placement of malicious code in SQL statements, often via user input. It can be prevented by using PreparedStatement to safely include parameters in SQL queries.",
+    imageURL: null
+  },
+  {
+    index: 33,
+    question: "What is the purpose of turning off auto-commit in JDBC transactions?",
+    choices: [
+      "Turning off auto-commit gives developers more control over when changes are committed to the database, allowing multiple SQL statements to be grouped into a single transaction.",
+      "Turning off auto-commit ensures that every SQL statement is committed immediately after execution, making transactions faster.",
+      "Turning off auto-commit allows automatic rollback of all SQL statements after execution, preventing any changes to the database.",
+      "Turning off auto-commit is required for executing SELECT statements, as it helps retrieve data more efficiently."
+    ],
+    correctAnswer: "Turning off auto-commit gives developers more control over when changes are committed to the database, allowing multiple SQL statements to be grouped into a single transaction.",
+    imageURL: null
+  },
+  {
+    index: 34,
+    question: "What is the primary purpose of the DAO (Data Access Object) pattern in Java?",
+    choices: [
+      "The DAO pattern separates the data persistence logic from the business logic, providing a clean interface for accessing data from a database.",
+      "The DAO pattern ensures that database connections are always open, allowing faster access to data.",
+      "The DAO pattern allows developers to execute SQL queries without the need for error handling or connection management.",
+      "The DAO pattern is used to improve the performance of SQL queries by caching data in memory for faster retrieval."
+    ],
+    correctAnswer: "The DAO pattern separates the data persistence logic from the business logic, providing a clean interface for accessing data from a database.",
     imageURL: null
   }
 
