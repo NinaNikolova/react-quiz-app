@@ -295,4 +295,17 @@ export const mysql2 = [
 		correctAnswer: "The annotation is kept and available to use while the program is running",
 		imageURL: null,
 	},
+	{
+		index: 26,
+		question: "What isn't true about entity in Spring Java?",
+		choices: [
+			"An entity is a class that represents a table in a relational database.",
+			"Each instance of this entity class corresponds to a row in the table.",
+			"Entities are typically annotated with @Entity to tell Spring Data and JPA (Java Persistence API) that the class should be mapped to a database table.",
+			"Fields in the entity class represent columns in the table, and additional annotations (e.g., @Id for primary keys, @Column for custom column mapping) define specific column properties.",
+			"None of the above is true"
+		],
+		correctAnswer: "None of the above is true",
+		imageURL: null,
+	},
 ];
